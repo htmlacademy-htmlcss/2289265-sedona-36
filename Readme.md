@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Psike Spiegel](https://up.htmlacademy.ru/htmlcss/36/user/2289265).
-* Наставник: `Павел Нюкало`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
