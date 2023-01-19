@@ -4,14 +4,47 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+<body>
 
-    </header>
 
+  <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
-    <footer>
-      <section class="footer-socials">
-        <ul>
+    <footer class="page-footer">
+      <section class="footer-subscribe">  <!--Вложил рассылку в footer, так как повторяется на других страницах-->
+        <h3>Подпишитесь на рассылку</h3>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form">
+          <input type="email" name="for-news" placeholder="Ваш e-mail"> <!--Не уверен, нужен-ли тег label с классом visually-hidden, потому его нет. Так же не указываю атрибут requried-->
+        <input type="submit" value="Подписаться">
+      </form>
+      </section>
+
+      <section class="footer-contacts">
+        <ul class="footer-socials">
           <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"></a><span class="visually-hidden">ВКонтакте</span></li>
           <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"></a><span class="visually-hidden">Телеграм</span></li>
           <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy"></a><span class="visually-hidden">Ютуб</span></li>
@@ -25,6 +58,6 @@
       <section class="footer-logo">
         <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
       </section>
-</footer class="page-footer">
+</footer>
   </body>
 </html>
