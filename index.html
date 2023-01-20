@@ -31,10 +31,11 @@
   <main class="main-index">
 
     <h1 class="visually-hidden">Седона</h1>
-<div class="description">
-  <strong>Седона — небольшой городок в Аризоне,
-  заслуживающий большего!</strong>>
- <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p></div>
+
+  <p class="description">
+    <strong>Седона — небольшой городок в Аризоне,
+  заслуживающий большего!</strong>
+Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
   <section class="advantages">
     <h2 class="visually-hidden">
@@ -65,9 +66,8 @@
   </section>
 
 
-
-     <strong>Приезжайте в Седону отдохнуть в комфорте и уюте!</strong>
-     <p>Опытный персонал и качественное обслуживание!</p>
+      <p><strong>Приезжайте в Седону отдохнуть в комфорте и уюте!</strong>
+      Опытный персонал и качественное обслуживание!</p>
 
 <section class="more-advantages">
       <h3 class="visually-hidden">
@@ -89,9 +89,11 @@
       </dl>
 </section>
 
-<div><strong>Заинтересовались?</strong>
-  <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
- <button form=""modal-window.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button></a>
+<div>
+  <p>
+    <strong>Заинтересовались?</strong>
+    Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+ <button form=""modal-window.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
 </div>
 
   </main>
@@ -123,5 +125,30 @@
         <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
       </div>
 </footer>
+
+<div class="modal" id="sedona-modal" class="hidden">
+<div class="modal-wrap">
+<form action="https://echo.htmlacademy.ru/" method="get">
+
+  <fieldset class="modal-dates">
+    <label for="modal-date-in">
+    Дата заезда:
+    <input id="modal-date-in" type="date" name="date">
+    <p class="hidden">Мы не можем отправить вас в прошлое.</p>
+  </label>
+  <label for="modal-date-out">
+    Дата выезда:
+    <input id="modal-date-out" type="date" name="date">
+    <p class="hidden">На эти даты есть свободные номера. Пока есть.</p>
+  </label>
+</fieldset>
+<div class="half-width">
+  <label for="amount">Взрослые:</label>
+  <input type="number" min="0" max="5" step="1" id="amount" name="amount">
+</div>
+</form>
+</div>
+<button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+</div>
   </body>
 </html>
