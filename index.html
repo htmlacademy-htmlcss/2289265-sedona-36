@@ -127,28 +127,38 @@
 </footer>
 
 <div class="modal" id="sedona-modal" class="hidden">
-<div class="modal-wrap">
+
+  <div class="modal-wrap">
 <form action="https://echo.htmlacademy.ru/" method="get">
 
   <fieldset class="modal-dates">
     <label for="modal-date-in">
     Дата заезда:
-    <input id="modal-date-in" type="date" name="date">
+    <input id="modal-date-in" type="date" name="date-in">
     <p class="hidden">Мы не можем отправить вас в прошлое.</p>
   </label>
   <label for="modal-date-out">
     Дата выезда:
-    <input id="modal-date-out" type="date" name="date">
+    <input id="modal-date-out" type="date" name="date-out">
     <p class="hidden">На эти даты есть свободные номера. Пока есть.</p>
   </label>
 </fieldset>
+
 <div class="half-width">
-  <label for="amount">Взрослые:</label>
-  <input type="number" min="0" max="5" step="1" id="amount" name="amount">
+  <label for="amount-adults">Взрослые:</label>
+  <input type="number" min="0" max="5" step="1" id="amount-adults" name="amount-adults">
 </div>
+
+<div class="half-width">
+  <label for="amount-kids">Дети:</label>
+  <input type="number" min="0" max="5" step="1" id="amount-kids" name="amount-kids">
+</div>
+
+<input type="submit" value="Найти">
 </form>
 </div>
 <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 </div>
-  </body>
+
+</body>
 </html>
