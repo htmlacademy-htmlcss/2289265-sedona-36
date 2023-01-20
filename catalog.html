@@ -6,15 +6,16 @@
   </head>
 <body>
 <header class="page-header">
-    <img class="header-logo" src="#" alt="">
+  <a class="main-page" href="index.html">
+     <img class="header-logo" src="#" alt="">
     <span class="visually-hidden">
       Логотип сайта
     </span>
-
+  </a>
   <nav class="navigation">
     <ul class="navigation-list"> <!--Не стал навзяывать class каждому элементу, поэтому классы для элементов списка пропустил-->
-<li><a href="#">Главная</a></li>
-<li><a href="#">О седоне</a></li>
+<li><a href="index.html">Главная</a></li>
+<li><a href="catalog.html">О седоне</a></li>
 <li><a href="#">Гостиницы</a></li>
     </ul>
   </nav>
@@ -28,35 +29,37 @@
  </nav>
 </header>
 
-  <main>
-  </main>
+<main>
+
+</main>
 
 
-    <footer class="page-footer">
-      <section class="footer-subscribe">  <!--Вложил рассылку в footer, так как повторяется на других страницах-->
-        <h3>Подпишитесь на рассылку</h3>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="for-news" placeholder="Ваш e-mail"> <!--Не уверен, нужен-ли тег label с классом visually-hidden, потому его нет. Так же не указываю атрибут requried-->
-        <input type="submit" value="Подписаться">
-      </form>
-      </section>
 
-      <section class="footer-contacts">
-        <ul class="footer-socials">
-          <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"></a><span class="visually-hidden">ВКонтакте</span></li>
-          <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"></a><span class="visually-hidden">Телеграм</span></li>
-          <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy"></a><span class="visually-hidden">Ютуб</span></li>
-        </ul>
-      </section>
+<footer class="page-footer">
+  <div class="footer-subscribe">  <!--Вложил рассылку в footer, так как повторяется на других страницах-->
+    <strong>Подпишитесь на рассылку</strong>
+    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <input type="email" name="for-news" placeholder="Ваш e-mail"> <!--Не уверен, нужен-ли тег label с классом visually-hidden, потому его нет. Так же не указываю атрибут requried-->
+    <input type="submit" value="Подписаться">
+  </form>
+</div>
 
-      <section class="footer-tel">
-       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
+  <div class="footer-contacts">
+    <ul class="footer-socials">
+      <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"></a><span class="visually-hidden">ВКонтакте</span></li>
+      <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"></a><span class="visually-hidden">Телеграм</span></li>
+      <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy"></a><span class="visually-hidden">Ютуб</span></li>
+    </ul>
+  </div>
 
-      <section class="footer-logo">
-        <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
-      </section>
+  <div class="footer-phone">
+   <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+  </div>
+
+  <div class="footer-logo">
+    <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
+  </div>
 </footer>
-  </body>
+</body>
 </html>
