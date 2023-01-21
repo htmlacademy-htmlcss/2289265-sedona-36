@@ -2,21 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Страница каталога</title>
   </head>
 <body>
 <header class="main-header">
   <a class="main-page" href="index.html">
-     <img class="header-logo" src="#" alt="">
-    <span class="visually-hidden">
-      Логотип сайта
-    </span>
+     <img class="header-logo" src="#" alt="Логотип сайта">
   </a>
   <nav class="navigation">
     <ul class="navigation-list"> <!--Не стал навзяывать class каждому элементу, поэтому классы для элементов списка пропустил-->
 <li><a href="index.html">Главная</a></li>
-<li><a href="catalog.html">О седоне</a></li>
-<li><a href="#">Гостиницы</a></li>
+<li><a href="#">О седоне</a></li>
+<li><a class="navigation-link-current" href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
 
@@ -29,7 +26,55 @@
  </nav>
 </header>
 
-<main>
+<main class="main-inner">
+<header class="inner-header">
+<h1>Гостиницы Седоны</h1>
+<ul class="inner-navigation">
+<li>
+  <a class="inner-link-main" href="index.html"><span class="visually-hidden">Главная</span>
+</li>
+<li">
+<a class="inner-link-catalog"></a>
+</li>
+</ul>
+
+<section class="filter">
+  <h2><span class="visually-hidden">Фильтр поиска</span></h2>
+  <form action="https://echo.htmlacademy.ru/" method="get">
+    <fieldset class="filter-checkbox">
+    <legend class="filter-checkbox-title">Инфраструктура:</legend>
+    <ul class="checkbox-list">
+      <li><label> <input type="checkbox" name="pool" checked>
+        Бассейн</label></li>
+        <li><label> <input type="checkbox" name="parking" checked>
+          Парковка</label></li>
+         <li><label> <input type="checkbox" name="wi-fi">
+          Wi-Fi</label></li>
+    </ul>
+    </fieldset>
+
+    <fieldset class="filter-radio">
+      <legend class="filter-radio-title">Тип жилья:</legend>
+      <ul class="radio-list">
+        <li><label> <input type="radio" name="type-of-housing" value="hotel" checked>
+          Гостиница</label></li>
+          <li> <label> <input type="radio" name="type-of-housing" value="motel">
+            Мотель</label></li>
+            <li><label> <input type="radio" name="type-of-housing" value="apartaments">
+              Апартаменты</label></li>
+      </ul>
+      </fieldset>
+
+      <fieldset class="filter-price">
+        <legend>Стоимость, ₽:</legend>
+
+      </fieldset>
+      <button type="submit">Применить</button>
+      <input type="reset" value="Сбросить">
+  </form>
+</section>
+
+</header>
 
 </main>
 
