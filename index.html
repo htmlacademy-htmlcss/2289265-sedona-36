@@ -14,19 +14,19 @@
           Логотип сайта
         </span>
       </a>
-      <div class="navigation">
+      <nav class="navigation">
         <ul class="navigation-list">
           <li><a href="index.html">Главная</a></li>
           <li><a href="about.html">О седоне</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
-      </div>
 
-        <ul class="user-navigation-list">  <!-->не думаю, что это ссылка</1-->
-          <li><a href="#"><span class="visually-hidden">Поиск</span></a></li> <!-->не думаю, что это ссылка</1-->
+        <ul class="user-navigation-list">
+          <li><a href="#"><span class="visually-hidden">Поиск</span></a></li> <!--не думаю, что это ссылка-->
           <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
           <li><a href="#">Хочу сюда!</a></li>
         </ul>
+      </nav>
 
     </header>
 
@@ -39,29 +39,49 @@
           заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
+        <ul class="advantages-list">
+          <li class="advantages-list-item">
+            <div>
+              <h3>Настоящий городок</h3>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img src="#" alt="photo of Sedona">
+            </div>
+          </li>
 
-        <dl class="advantages-list">
-          <dt>Настоящий городок</dt>
-          <dd>Седона — не аттракцион для туристов, там течёт своя жизнь</dd>
-          <dd><img src="#" alt="photo of Sedona"></dd>
+          <li class="advantages-list-item">
+            <div>
+              <h3>Небольшая
+                площадь</h3>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
 
-          <dt>Небольшая
-            площадь</dt>
-          <dd>Все достопримечательности находятся очень близко</dd>
+          <li class="advantages-list-item">
+            <div>
+              <h3>Красивая
+                дорога</h3>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
 
-          <dt>Красивая
-            дорога</dt>
-          <dd>Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
+          <li class="advantages-list-item">
+            <div>
+              <h3>Мало
+                туристов</h3>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
 
-          <dt>Мало
-            туристов</dt>
-          <dd>Большинство едет в Гранд Каньон и толпится там</dd>
+          <li>
+            <div>
+              <h3>Там есть
+                мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img src="#" alt="Devil's bridge">
+            </div>
+          </li>
 
-          <dt>Там есть
-            мост дьявола</dt>
-          <dd>Да, по нему можно пройти! Если вы осмелитесь, разумеется</dd>
-          <dd><img src="#" alt="Devil's bridge"></dd>
-        </dl>
+        </ul>
       </section>
 
       <section class="more-advantages">
@@ -71,62 +91,77 @@
         <p>Опытный персонал и качественное обслуживание!</p>
 
 
-        <dl class="more-advantages-list">
-          <dt>Жильё</dt>
-          <dd>Рекомендуем пожить в настоящем мотеле,
-            всё как в кино!</dd>
+        <ul class="more-advantages-list">
+          <li>
+            <div>
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле,
+                всё как в кино!</p>
+            </div>
+          </li>
 
-          <dt>Еда</dt>
-          <dd>Всегда заказывайте
-            топовый фирменный бургер, вы не разочаруетесь!</dd>
+          <li>
+            <div>
+              <h3>Еда</h3>
+              <p>Всегда заказывайте
+                топовый фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </li>
 
-          <dt>Сувениры</dt>
-          <dd>Не только китайского,
-            но и настоящего местного производства!</dd>
-        </dl>
+          <li>
+            <div>
+              <h3>Сувениры</h3>
+              <p>Не только китайского,
+                но и настоящего местного производства!</p>
+            </div>
+          </li>
+
+        </ul>
       </section>
 
-      <div class="find-hotel">
-        <p>
-          <strong>Заинтересовались?</strong><br>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      <section class="find-hotel">
+        <h2>Заинтересовались?</h2><br>
+        <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button form="modal-window.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-      </div>
+        <a href="catalog.html">Поиск гостиницы в Седоне</a>
+      </section>
 
     </main>
 
 
     <footer class="main-footer">
-      <div class="footer-subscribe"> <!--Вложил рассылку в footer, так как повторяется на других страницах-->
-        <strong>Подпишитесь на рассылку</strong>
+      <section class="subscription">
+        <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="for-news" placeholder="Ваш e-mail">
-          <!--Не уверен, нужен-ли тег label с классом visually-hidden, потому его нет. Так же не указываю атрибут requried-->
-          <input type="submit" value="Подписаться">
+          <label for="email-field" class="visually-hidden">
+            Поле ввода почты
+          </label>
+          <input id="email-field" type="email" placeholder="Ваш e-mail">
+          <button type="submit" class="button subscription-button">Подписаться</button>
         </form>
-      </div>
+      </section>
 
       <div class="footer-contacts">
         <ul class="footer-socials">
-          <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"></a><span
-              class="visually-hidden">ВКонтакте</span></li>
-          <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"></a><span
-              class="visually-hidden">Телеграм</span></li>
-          <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy"></a><span
-              class="visually-hidden">Ютуб</span></li>
+          <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"><span
+                class="visually-hidden">ВКонтакте</span></a></li>
+          <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"><span
+                class="visually-hidden">Телеграм</span></a></li>
+          <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy">b<span
+                class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
 
-      <addres class="phone-number"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+      <a href="tel:+78128121212" class="phone-number">+7 (812) 812-12-12</a>
 
-        <div class="footer-logo">
-          <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
-        </div>
+      <div class="footer-logo">
+        <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
+      </div>
+
     </footer>
 
-    <div class="modal" id="sedona-modal" class="hidden">
+    <div id="sedona-modal" class="visually-hidden modal-window">
 
       <div class="modal-wrap">
         <form action="https://echo.htmlacademy.ru/" method="get">
@@ -135,12 +170,12 @@
             <label for="modal-date-in">
               Дата заезда:
               <input id="modal-date-in" type="date" name="date-in">
-              <p class="hidden">Мы не можем отправить вас в прошлое.</p>
+              <span class="visually-hidden">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label for="modal-date-out">
               Дата выезда:
               <input id="modal-date-out" type="date" name="date-out">
-              <p class="hidden">На эти даты есть свободные номера. Пока есть.</p>
+              <span class="hidden">На эти даты есть свободные номера. Пока есть.</span>
             </label>
           </fieldset>
 
@@ -156,7 +191,7 @@
             <input type="number" min="0" max="5" step="1" id="amount-kids" name="amount-kids">
           </div>
 
-          <input type="submit" value="Найти">
+          <button type="submit">Найти</button>
         </form>
       </div>
       <button class="button button-close"><span class="visually-hidden">Закрыть</span></button>

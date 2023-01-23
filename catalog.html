@@ -8,21 +8,21 @@
 
   <body>
     <header class="main-header">
-      <a class="main-page" href="index.html">
-        <img class="header-logo" src="#" alt="Логотип сайта">
+      <a class="main-page">
+        <img class="header-logo" src="#" alt="">
+        <span class="visually-hidden">
+          Логотип сайта
+        </span>
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
-          <!--Не стал навзяывать class каждому элементу, поэтому классы для элементов списка пропустил-->
           <li><a href="index.html">Главная</a></li>
-          <li><a href="#">О седоне</a></li>
-          <li><a class="navigation-link-current" href="catalog.html">Гостиницы</a></li>
+          <li><a href="about.html">О седоне</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
-      </nav>
 
-      <nav class="user-navigation">
         <ul class="user-navigation-list">
-          <li><a href="#"><span class="visually-hidden">Поиск</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Поиск</span></a></li> <!--не думаю, что это ссылка-->
           <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
           <li><a href="#">Хочу сюда!</a></li>
         </ul>
@@ -211,33 +211,37 @@
 
 
 
+
     <footer class="main-footer">
-      <div class="footer-subscribe"> <!--Вложил рассылку в footer, так как повторяется на других страницах-->
-        <strong>Подпишитесь на рассылку</strong>
+      <section class="subscription">
+        <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="for-news" placeholder="Ваш e-mail">
-          <!--Не уверен, нужен-ли тег label с классом visually-hidden, потому его нет. Так же не указываю атрибут requried-->
-          <input type="submit" value="Подписаться">
+          <label for="email-field" class="visually-hidden">
+            Поле ввода почты
+          </label>
+          <input id="email-field" type="email" placeholder="Ваш e-mail">
+          <button type="submit" class="button subscription-button">Подписаться</button>
         </form>
-      </div>
+      </section>
 
       <div class="footer-contacts">
         <ul class="footer-socials">
-          <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"></a><span
-              class="visually-hidden">ВКонтакте</span></li>
-          <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"></a><span
-              class="visually-hidden">Телеграм</span></li>
-          <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy"></a><span
-              class="visually-hidden">Ютуб</span></li>
+          <li class="footer-socials-vk"><a class="button" href="https://vk.com/htmlacademy"><span
+                class="visually-hidden">ВКонтакте</span></a></li>
+          <li class="footer-socials-telegram"><a class="button" href="https://t.me/htmlacademy"><span
+                class="visually-hidden">Телеграм</span></a></li>
+          <li class="footer-socials-youtube"><a class="button" href="https://youtube.com/user/htmlacademy">b<span
+                class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
 
-      <addres class="phone-number"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+      <a href="tel:+78128121212" class="phone-number">+7 (812) 812-12-12</a>
 
-        <div class="footer-logo">
-          <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
-        </div>
+      <div class="footer-logo">
+        <a class="footer-logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип-ссылка</span></a>
+      </div>
+
     </footer>
   </body>
 
