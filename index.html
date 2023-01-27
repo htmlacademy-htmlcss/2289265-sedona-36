@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">  <!--не понимаю значение эторй строки-->
+    <link rel="icon" href="favicon.ico"> <!--не понимаю значение эторй строки-->
     <link rel="icon" type="image/svg" sizes="32x32" href="images/favicon.svg">
   </head>
 
@@ -150,10 +150,13 @@
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="email-field" class="visually-hidden">
-            Поле ввода почты
-          </label>
-          <input id="email-field" type="email" placeholder="Ваш e-mail">
+          <p>
+            <label for="email-field" class="visually-hidden">
+              Поле ввода почты
+            </label>
+            <input id="email-field" type="email" placeholder="Ваш e-mail">
+            <img src="images/index/modal-date.svg" width="16" height="15" alt="Иконка даты">
+          </p>
           <button type="submit" class="button subscription-button">Подписаться</button>
           <img src="images/footer/subscribe-background.jpg" width="1200" height="fill" alt="Бэкграунд для рассылки">
         </form>
@@ -193,7 +196,7 @@
 
     </footer>
 
-    <div id="sedona-modal" class="visually-hidden modal-window">
+  <!--     <div id="sedona-modal" class="visually-hidden modal-window">
 
       <div class="modal-wrap">
         <form action="https://echo.htmlacademy.ru/" method="get">
@@ -204,11 +207,13 @@
               <input id="modal-date-in" type="date" name="date-in">
               <span class="visually-hidden">Мы не можем отправить вас в прошлое.</span>
             </label>
+            <img src="images/index/modal-date.svg" width="16" height="15" alt="Иконка даты">
             <label for="modal-date-out">
               Дата выезда:
               <input id="modal-date-out" type="date" name="date-out">
               <span class="hidden">На эти даты есть свободные номера. Пока есть.</span>
             </label>
+            <img src="images/index/modal-date.svg" width="16" height="15" alt="Иконка даты">
           </fieldset>
 
           <div class="half-width">
@@ -228,7 +233,8 @@
         </form>
       </div>
       <button type="button" class="button button-close"><span class="visually-hidden">Закрыть</span></button>
-    </div>
+    </div> -->
+
 
   </body>
 
