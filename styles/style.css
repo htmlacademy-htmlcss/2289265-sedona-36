@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT sans" ;
+  font-family: "PT sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -7,9 +7,104 @@
 }
 
 @font-face {
-  font-family: "PT sans" ;
+  font-family: "PT sans";
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-list li {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.hero {
+  background-color: #82B3D3;
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 485px;
+}
+
+.advantages-list li {
+  list-style: none;
+  text-align: center;
+}
+
+
+.advantages-list b {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-list p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-link:first-child div,
+.advantages-link:last-child div {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-link:first-child p,
+.advantages-link:last-child p {
+  color: #ffffff;
+}
+
+.advantages-link:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.subscription {
+background-image: url("../images/index/subscribe-background.jpg");
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+
+/*
+footer {
+  display: flex;
+}
+
+.footer-socials {
+  list-style: none;
+  display: flex;
+}
+
+.phone-number {
+text-decoration: none;
+color:#000000;
+}
+*/
