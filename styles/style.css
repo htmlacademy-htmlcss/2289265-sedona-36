@@ -17,8 +17,8 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -137,10 +137,11 @@ line-height: 21px;
   background-image: url("../images/index/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #82B3D3;
 }
 
-.subscription b,
-.subscription p {
+.subscription .title,
+.subscription .text {
   color: #ffffff;
 }
 
