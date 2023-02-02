@@ -159,6 +159,10 @@ body {
   display: flex;
 }
 
+.footer-socials a {
+
+}
+
 .phone-number {
   text-decoration: none;
   color: #000000;
