@@ -22,36 +22,6 @@ body {
   color: #000000;
 }
 
-.visually-hidden {
-  display: none;
-}
-
-.main-header {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.navigation-list li {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  list-style: none;
-}
-
-.navigation-list li a {
-  text-decoration: none;
-  color: inherit;
-  text-transform: capitalize;
-  text-align: center;
-}
-
-.hero {
-  background-color: #82B3D3;
-  background-image: url("../images/index/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 1200px 485px;
-}
-
 b {
   font-weight: 700;
   font-size: 30px;
@@ -66,7 +36,37 @@ p {
   color: #333333;
 }
 
-.advantages-list li {
+.visually-hidden {
+  display: none;
+}
+
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.navigation-list a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.hero {
+  background-color: #82B3D3;
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px 485px;
+}
+
+.advantages-list {
   list-style: none;
   text-align: center;
 }
