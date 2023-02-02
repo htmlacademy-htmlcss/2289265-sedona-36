@@ -16,8 +16,9 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -72,7 +73,7 @@ body {
 }
 
 
-.advantages-list b {
+.advantages-list h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -111,6 +112,20 @@ body {
   background: rgba(131, 179, 211, 0.12);
 }
 
+.more-advantages-list p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.more-advantages-list h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
 .button-hotel-search {
   text-decoration: none;
   color: #ffffff;
@@ -142,7 +157,6 @@ body {
   list-style: none;
   display: flex;
 }
-
 
 .phone-number {
   text-decoration: none;
