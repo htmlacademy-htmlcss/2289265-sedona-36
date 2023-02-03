@@ -159,9 +159,7 @@ body {
   display: flex;
 }
 
-.footer-socials a {
-
-}
+.footer-socials a {}
 
 .phone-number {
   text-decoration: none;
@@ -174,4 +172,97 @@ body {
 
 .phone-number:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+/* Catalog */
+
+.filter {
+  background-color: #82B3D3;
+  color: #ffffff;
+  background-image: url("../images/catalog/filter-background.png");
+  background-repeat: no-repeat;
+  background-size: 1440px 600px;
+}
+
+.filter h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.bread-crumbs {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Legends and Fieldsets */
+
+.filter-checkbox-title,
+.filter-radio-title,
+.filter-price-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Checkbox and radio */
+
+.filter-checkbox,
+.filter-radio,
+.filter-price {
+  border: none;
+}
+
+.checkbox-list,
+.radio-list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* Buttons */
+
+.button {
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-submit {
+  background: #82B3D3;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.button-reset {
+  background: none;
+  border: none;
+}
+
+/* Catalog Navigation */
+
+.hotels-found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog-sorting-select {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.view-plates-list {
+  list-style:none;
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style:none;
 }
