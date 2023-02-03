@@ -41,6 +41,8 @@ body {
   display: none;
 }
 
+/* Header */
+
 .main-header {
   background-color: #ffffff;
   color: #000000;
@@ -59,6 +61,8 @@ body {
   text-transform: capitalize;
   text-align: center;
 }
+
+/* Main Welcome, Advantages */
 
 .hero {
   background-color: #82B3D3;
@@ -126,6 +130,8 @@ body {
   text-transform: uppercase;
 }
 
+/* Hotel, Subscription */
+
 .find-hotel .button-hotel-search {
   text-decoration: none;
   color: #ffffff;
@@ -157,6 +163,8 @@ body {
   background: #82B3D3;
   color: white;
 }
+
+/* Footer */
 
 .footer-socials {
   list-style: none;
