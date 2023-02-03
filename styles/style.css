@@ -306,6 +306,24 @@ body {
   background: #F2F2F2;
 }
 
+/* Pagination */
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: white;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
 /* Inner Subscription */
 
 .inner-subscription .subscription-button {
