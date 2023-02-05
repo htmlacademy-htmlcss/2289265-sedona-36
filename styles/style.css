@@ -89,10 +89,15 @@ body {
 
 .hero {
   background-color: #82B3D3;
-  background-image: url("../images/index/index-background.jpg");
+  background-image: url("../images/index/divider.svg"), url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
+  background-position: 0% 100%;
+  background-size: contain, cover;
+  height: 485px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-list {
