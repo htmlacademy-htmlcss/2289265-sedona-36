@@ -95,7 +95,7 @@ body {
   background-position: 0% 100%;
   background-size: contain, cover;
   height: 485px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -103,6 +103,11 @@ body {
 .advantages-list {
   list-style: none;
   text-align: center;
+}
+
+.advantages-item,
+.more-advantages-item {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 
@@ -140,9 +145,8 @@ body {
   text-align: center;
 }
 
-.more-advantages-item:first-child,
-.more-advantages-item:last-child {
-  background: rgba(131, 179, 211, 0.12);
+.more-advantages-item:nth-child(2) {
+  background: #FFFFFF;
 }
 
 .more-advantages-list p {
