@@ -207,9 +207,9 @@ padding-top: 0;
 }
 
 .find-hotel .text {
-  padding-bottom: 0;
-  margin-bottom: 54px;;
+  margin-bottom: 54px;
 }
+
 .button-hotel-search {
   text-decoration: none;
   font-size: 20px;
@@ -244,7 +244,7 @@ padding-top: 0;
 }
 
 .subscription .title {
-  margin-top: 96px;
+padding-top: 96px;
 }
 
 .subscription .text {
