@@ -26,11 +26,17 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.main-index {
+background-color: #FFFFFF;
+}
 .title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 250px;
+  padding-top:70px;
 }
 
 .text {
@@ -38,6 +44,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -82,7 +89,6 @@ body {
   line-height: 24px;
   list-style: none;
   gap: 30px;
-  align-items: center;
   padding: 0;
 }
 
@@ -123,6 +129,9 @@ body {
   align-items: center;
 }
 
+.advantages {
+  background-color: #FFFFFF;
+}
 .advantages-list {
   list-style: none;
   text-align: center;
@@ -188,6 +197,19 @@ body {
 
 /* Hotel, Subscription */
 
+.find-hotel {
+  text-align: center;
+  padding: 96px
+}
+
+.find-hotel .title {
+padding-top: 0;
+}
+
+.find-hotel .text {
+  padding-bottom: 0;
+  margin-bottom: 54px;;
+}
 .button-hotel-search {
   text-decoration: none;
   font-size: 20px;
@@ -200,8 +222,10 @@ body {
 .subscription {
   background-image: url("../images/index/subscribe-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #82B3D3;
+  min-height: 415px;
+  text-align: center;
 }
 
 .subscription-button {
@@ -219,7 +243,26 @@ body {
   color: #FFFFFF;
 }
 
+.subscription .title {
+  margin-top: 96px;
+}
 
+.subscription .text {
+  padding: 0 300px;
+}
+
+.subscription input {
+  width: 452px;
+height: 52px;
+}
+
+[placeholder="Ваш e-mail"] {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
 
 /* Footer */
 
@@ -362,10 +405,14 @@ body {
   list-style: none;
 }
 
+
+
 .pagination-link {
   text-decoration: none;
   color: #FFFFFF;
-  background: #82B3D3;
+  background-color: #82B3D3;
+background-size: ;
+  /*
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
