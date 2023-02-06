@@ -27,8 +27,9 @@ body {
 }
 
 .main-index {
-background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
+
 .title {
   font-weight: 700;
   font-size: 30px;
@@ -36,7 +37,7 @@ background-color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
   margin: 0 250px;
-  padding-top:70px;
+  padding-top: 70px;
 }
 
 .text {
@@ -132,6 +133,7 @@ background-color: #FFFFFF;
 .advantages {
   background-color: #FFFFFF;
 }
+
 .advantages-list {
   list-style: none;
   text-align: center;
@@ -172,6 +174,10 @@ background-color: #FFFFFF;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.more-advantages .title {
+  padding: 0 100px;
+}
+
 .more-advantages-list {
   list-style: none;
   text-align: center;
@@ -203,7 +209,7 @@ background-color: #FFFFFF;
 }
 
 .find-hotel .title {
-padding-top: 0;
+  padding-top: 0;
 }
 
 .find-hotel .text {
@@ -218,12 +224,14 @@ padding-top: 0;
   height: 52px;
 }
 
-
-.subscription {
+.main-subscription {
   background-image: url("../images/index/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #82B3D3;
+}
+
+.subscription {
   min-height: 415px;
   text-align: center;
 }
@@ -238,22 +246,23 @@ padding-top: 0;
 }
 
 
-.subscription .title,
-.subscription .text {
+.main-subscription .title,
+.main-subscription .text {
   color: #FFFFFF;
 }
 
 .subscription .title {
-padding-top: 96px;
+  padding-top: 96px;
 }
 
 .subscription .text {
-  padding: 0 300px;
+  padding: 0 330px;
+  margin-bottom: 54px;
 }
 
 .subscription input {
   width: 452px;
-height: 52px;
+  height: 52px;
 }
 
 [placeholder="Ваш e-mail"] {
@@ -305,6 +314,9 @@ height: 52px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 70px;
 }
 
 .bread-crumbs {
@@ -405,14 +417,10 @@ height: 52px;
   list-style: none;
 }
 
-
-
 .pagination-link {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
-background-size: ;
-
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
