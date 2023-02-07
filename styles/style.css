@@ -265,8 +265,8 @@ body {
   height: 52px;
 }
 
-[placeholder="Ваш e-mail"] {
-  font-family: 'PT Sans';
+.placeholder {
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
