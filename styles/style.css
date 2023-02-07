@@ -140,11 +140,9 @@ body {
   text-align: center;
 }
 
-.advantages-item,
-.more-advantages-item {
+.advantages-item {
   background: rgba(131, 179, 211, 0.12);
 }
-
 
 .advantages-list h3 {
   font-weight: 700;
@@ -171,35 +169,12 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-item:nth-child(3) {
+.advantages-item-road{
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.more-advantages .title {
-  padding: 0 100px;
-}
-
-.more-advantages-list {
-  list-style: none;
-  text-align: center;
-}
-
-.more-advantages-item:nth-child(2) {
+.advantages-item-food {
   background: #FFFFFF;
-}
-
-.more-advantages-list p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
-.more-advantages-list h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
 }
 
 /* Hotel, Subscription */
