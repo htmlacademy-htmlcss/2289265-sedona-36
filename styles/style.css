@@ -158,14 +158,14 @@ body {
   color: #333333;
 }
 
-.sedona-town div,
-.devil-bridge div {
+.advantages-item-town div,
+.advantages-item-bridge div {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
 
-.sedona-town p,
-.devil-bridge p {
+.advantages-item-town p,
+.advantages-item-bridge p {
   color: #FFFFFF;
 }
 
