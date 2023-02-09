@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT sans";
+  font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT sans";
+  font-family: "PT Sans";
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -125,7 +125,6 @@ body {
   background-color: #82B3D3;
   background-image: url("../images/index/divider.svg"), url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
-  text-align: center;
   background-position: 0% 100%;
   background-size: contain, cover;
   height: 485px;
@@ -139,8 +138,11 @@ body {
 }
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-align: center;
+
 }
 
 .advantages-item {
