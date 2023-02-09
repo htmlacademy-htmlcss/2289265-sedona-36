@@ -14,10 +14,16 @@
   font-display: swap;
 }
 
-body {
+html {
   height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
-  margin: 0 auto;
+  min-height: 100%;
+  margin: auto;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -28,6 +34,7 @@ body {
 }
 
 .main-index {
+  flex-grow: 1;
   background-color: #FFFFFF;
 }
 
@@ -75,18 +82,14 @@ body {
 
 .navigation {
   display: flex;
-  height: 64px;
-}
-
-.nav-flex {
-  display: flex;
-  margin-left: 70px;
-  margin-right: auto;
-  gap: 30px;
+  justify-content: start;
+  min-height: 64px;
+  margin: 0 70px;
 }
 
 .navigation-list {
   display: flex;
+  align-items: start;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -95,20 +98,19 @@ body {
   padding: 0;
 }
 
+
+.user-navigation-list {
+  width: 280px;
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+  padding: 0;
+}
+
 .navigation-list a {
   text-decoration: none;
   color: inherit;
   text-transform: capitalize;
-}
-
-.user-navigation-list {
-  display: flex;
-  margin-left: auto;
-  margin-right: 70px;
-  gap: 20px;
-  align-items: center;
-  padding: 0;
-
 }
 
 .button.button-wanted {
@@ -292,7 +294,7 @@ body {
 }
 
 .footer-logo {
- /* margin-right: 70px;
+  /* margin-right: 70px;
   margin-left: auto;*/
 }
 
