@@ -148,8 +148,13 @@ body {
 
 .advantages-item {
   background: rgba(131, 179, 211, 0.12);
-  height: 385px;
 }
+
+.advantages-item div {
+ width: 400px;
+ height: 385px;
+}
+
 
 
 .advantages-list h3 {
@@ -164,6 +169,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  padding: 85px;
 }
 
 .advantages-item-town div,
@@ -284,8 +290,8 @@ body {
   padding: 0;
 }
 
-.footer-socials-item {
-  padding: 0 10px;
+.footer-socials-item a {
+  padding: 10px 10px;
 }
 
 .phone-number {
