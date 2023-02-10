@@ -34,8 +34,11 @@ body {
 }
 
 .main-index {
-  flex-grow: 1;
   background-color: #FFFFFF;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .title {
