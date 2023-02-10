@@ -57,7 +57,16 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -97,7 +106,6 @@ body {
   gap: 30px;
   padding: 0;
 }
-
 
 .user-navigation-list {
   width: 280px;
@@ -151,11 +159,9 @@ body {
 }
 
 .advantages-item div {
- width: 400px;
- height: 385px;
+  min-width: 400px;
+  min-height: 385px;
 }
-
-
 
 .advantages-list h3 {
   font-weight: 700;
@@ -182,7 +188,6 @@ body {
 .advantages-item-bridge {
   display: flex;
 }
-
 
 .advantages-item-town p,
 .advantages-item-bridge p {
@@ -244,7 +249,6 @@ body {
   padding: 8px 50px;
   height: 52px;
 }
-
 
 .main-subscription .title,
 .main-subscription .text {
