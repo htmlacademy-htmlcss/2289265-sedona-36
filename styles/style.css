@@ -361,19 +361,19 @@ body {
   line-height: 21px;
 }
 
-.filter-flex {
+.filter-container {
   display: flex;
   justify-content: space-between;
 }
 
-.left-part {
+.left-container {
   min-width: 370px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.right-part {
+.right-container {
   min-width: 550px;
   display: flex;
   flex-direction: row;
@@ -448,7 +448,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  padding: 0;
+ margin-right: auto;
 }
 
 .catalog-sorting-select {
@@ -462,6 +462,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 70px;
   gap: 8px;
 }
 
