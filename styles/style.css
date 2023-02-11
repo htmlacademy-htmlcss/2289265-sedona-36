@@ -181,7 +181,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin: 0 85px
+  padding: 0 85px;
 }
 
 .advantages-item-town div,
@@ -343,6 +343,7 @@ body {
   background-image: url("../images/catalog/filter-background.png");
   background-repeat: no-repeat;
   background-size: 1440px 600px;
+  padding: 35px 70px 70px;
 }
 
 .filter h1 {
@@ -350,8 +351,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
-  padding-top: 35px;
-  padding-left: 70px;
+  padding: 0;
 }
 
 .bread-crumbs {
@@ -363,6 +363,21 @@ body {
 
 .filter-flex {
   display: flex;
+  justify-content: space-between;
+}
+
+.left-part {
+  min-width: 370px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right-part {
+  min-width: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Legends and Fieldsets */
@@ -381,7 +396,10 @@ body {
 .filter-radio,
 .filter-price {
   border: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .checkbox-list,
 .radio-list {
@@ -389,6 +407,14 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.button-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .button-submit {
