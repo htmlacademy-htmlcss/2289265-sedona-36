@@ -165,8 +165,8 @@ body {
 }
 
 .advantages-item div {
-  min-width: 400px;
-  min-height: 385px;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-list h3 {
@@ -181,7 +181,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 85px;
+  margin: 0 85px
 }
 
 .advantages-item-town div,
@@ -359,6 +359,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.filter-flex {
+  display: flex;
 }
 
 /* Legends and Fieldsets */
