@@ -95,7 +95,6 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: start;
   align-items: center;
   min-height: 64px;
   margin: 0 70px;
@@ -103,7 +102,6 @@ body {
 
 .navigation-list {
   display: flex;
-  align-items: start;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -113,7 +111,16 @@ body {
   margin: 0;
 }
 
+.navigation-link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+  display: block;
+  padding: 10px;
+}
+
 .user-navigation-list {
+  list-style: none;
   width: 280px;
   display: flex;
   margin-left: auto;
@@ -121,7 +128,7 @@ body {
   padding: 0;
 }
 
-.navigation-list a {
+.user-navigation-link {
   text-decoration: none;
   color: inherit;
   text-transform: capitalize;
