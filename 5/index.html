@@ -22,35 +22,30 @@
         </a>
 
         <ul class="navigation-list">
-          <li><a>Главная</a></li>
-          <li><a href="about.html">О седоне</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a class="navigation-link">Главная</a></li>
+          <li><a class="navigation-link" href="about.html">О седоне</a></li>
+          <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 
-        <ul class="navigation-list user-navigation-list">
-          <li class="navigation-search-item">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label class="visually-hidden">
-                Поиск
-                <input type="search" class="input-hide">
-              </label>
-              <img src="images/header/search.svg" width="18" height="18" alt="Иконка поика.">
-            </form>
+        <ul class="user-navigation-list">
+          <li>
+            <a class="user-navigation-link" href="#""><span class=" visually-hidden">Поиск.</span>
+            </a>
           </li>
           <li>
-            <a href="#"><span class="visually-hidden">Избранное.</span>
+            <a class="user-navigation-link" href="#"><span class="visually-hidden">Избранное.</span>
               <img src="images/header/heart.svg" width="18" height="17" alt="Иконка избранного.">
               <span>12</span>
             </a>
           </li>
           <li>
-            <a class="button button-wanted" href="#">Хочу сюда!</a>
+            <a class="user-navigation-link button button-wanted" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index main-container">
 
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
@@ -68,7 +63,9 @@
           <li class="advantages-item advantages-item-town">
             <div>
               <h3>Настоящий городок</h3>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p>
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
             </div>
             <img src="images/index/advantages-town.jpg" width="800" height="385" alt="Фото Седоны.">
           </li>
