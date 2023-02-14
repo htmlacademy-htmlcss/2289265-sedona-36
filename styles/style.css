@@ -197,8 +197,8 @@ body {
   padding: 0 85px;
 }
 
-.advantages-item-town div,
-.advantages-item-bridge div {
+.advantages-item-town,
+.advantages-item-bridge  {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
