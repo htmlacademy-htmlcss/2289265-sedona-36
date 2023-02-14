@@ -47,8 +47,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 250px;
-  padding-top: 70px;
+  margin: 0;
+  padding: 0;
 }
 
 .text {
@@ -57,6 +57,8 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -138,7 +140,7 @@ body {
 }
 
 .user-navigation-link.button.button-wanted {
-  min-height: 36px  ;
+  min-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 8px 34px;
@@ -159,9 +161,18 @@ body {
 }
 
 .logo {
-display: block;
-margin-bottom: 82px;
-margin-top: 51px;
+  display: block;
+  margin-bottom: 82px;
+  margin-top: 51px;
+}
+
+.advantages-text {
+  margin-bottom: 21px;
+  padding: 69px;
+}
+
+.advantages-text .title {
+  padding-bottom: 25px;
 }
 
 .advantages {
@@ -184,9 +195,11 @@ margin-top: 51px;
 .advantages-item div {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 400px;
   min-height: 385px;
   text-align: center;
+  padding: 0 85px;
 }
 
 .advantages-list h3 {
@@ -194,6 +207,13 @@ margin-top: 51px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-top: 112px;
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.advantages-item-town h3,
+.advantages-item-bridge h3 {
   padding-top: 102px;
 }
 
@@ -202,11 +222,12 @@ margin-top: 51px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 0 85px;
+
+  margin: 0;
 }
 
 .advantages-item-town,
-.advantages-item-bridge  {
+.advantages-item-bridge {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -229,8 +250,22 @@ margin-top: 51px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+/* More Advantages */
+
+.more-advantages-text {
+  padding: 64px;
+}
+
+.more-advantages-text .title {
+  padding-bottom: 20px;
+}
 .advantages-item-food {
   background: #FFFFFF;
+}
+
+.more-advantages-item div h3 {
+  margin: 183px 85px 30px 85px;
+  padding: 0;
 }
 
 /* Hotel */
