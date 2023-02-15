@@ -124,6 +124,7 @@ body {
 
 .user-navigation-list {
   display: flex;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -222,7 +223,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-
   margin: 0;
 }
 
@@ -253,20 +253,28 @@ body {
 /* More Advantages */
 
 .more-advantages-text {
+  text-align: center;
   padding: 64px;
 }
 
 .more-advantages-text .title {
+  text-align: center;
   padding-bottom: 20px;
 }
+
 .advantages-item-food {
   background: #FFFFFF;
 }
 
-.more-advantages-item div h3 {
-  margin: 183px 85px 30px 85px;
+.more-advantages-item div {
+  padding: 183px 85px 30px 85px;
+  margin: 0;
+}
+
+.more-advantages-item h3 {
   padding: 0;
 }
+
 
 /* Hotel */
 
