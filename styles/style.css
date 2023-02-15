@@ -363,25 +363,25 @@ body {
 
 .main-footer {
   display: flex;
-  width: 1200px;
-  min-height: 120px;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 1060px;
+  min-height: 50px;
+  padding: 40px 70px 30px 70px;
   align-items: center;
 }
 
 .footer-socials {
   list-style: none;
   display: flex;
-  /*margin-right: auto;
-  padding-left: 70px;*/
 }
 
 .footer-socials ul {
+  margin: 0;
   padding: 0;
 }
 
 .footer-socials-item a {
-  padding: 10px 10px;
+  Padding: 10px 10px;
 }
 
 .phone-number {
@@ -400,9 +400,8 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo {
-  /* margin-right: 70px;
-  margin-left: auto;*/
+.footer-logo a {
+  display: block;
 }
 
 /* Catalog */
