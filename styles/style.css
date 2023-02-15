@@ -269,10 +269,14 @@ body {
 .more-advantages-item div {
   padding: 183px 85px 30px 85px;
   margin: 0;
+  text-align: center;
 }
 
-.more-advantages-item h3 {
+.more-advantages-item h3,
+.more-advantages-item p {
   padding: 0;
+  width: 230px;
+  min-height: 63px;
 }
 
 
