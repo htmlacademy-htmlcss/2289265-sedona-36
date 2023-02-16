@@ -373,6 +373,7 @@ body {
 .footer-socials {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-socials ul {
@@ -380,8 +381,15 @@ body {
   padding: 0;
 }
 
-.footer-socials-item a {
-  Padding: 10px 10px;
+.footer-socials-item  {
+  box-sizing: border-box;
+  width: 47px;
+  height: 40px;
+}
+
+.footer-socials-item  a {
+display: block;
+padding: 10px 10px;
 }
 
 .phone-number {
