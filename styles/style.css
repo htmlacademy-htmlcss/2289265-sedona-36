@@ -141,6 +141,7 @@ body {
 }
 
 .user-navigation-link.button.button-wanted {
+  box-sizing: border-box;
   min-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -381,15 +382,15 @@ body {
   padding: 0;
 }
 
-.footer-socials-item  {
+.footer-socials-item {
   box-sizing: border-box;
   width: 47px;
   height: 40px;
 }
 
-.footer-socials-item  a {
-display: block;
-padding: 10px 10px;
+.footer-socials-item a {
+  display: block;
+  padding: 10px 10px;
 }
 
 .phone-number {
@@ -552,9 +553,12 @@ padding: 10px 10px;
 /* Catalog */
 
 .catalog-list {
+  width: 1060px;
+  margin-bottom: 80px;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
 }
 
 .catalog-list h3 {
@@ -585,9 +589,16 @@ padding: 10px 10px;
 /* Pagination */
 
 .pagination {
+  width: 1060px;
+}
+
+.pagination-list {
   display: flex;
-  gap: 8px;
   list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
 .pagination-link {
