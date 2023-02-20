@@ -156,7 +156,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: auto, cover;
-  height: 485px;
+  min-height: 485px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,7 +409,7 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo a {
+.footer-logo {
   display: block;
 }
 
