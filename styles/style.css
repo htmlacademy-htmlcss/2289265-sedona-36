@@ -94,6 +94,10 @@ body {
   margin: 0;
 }
 
+.header-logo {
+  margin-bottom: -10px;
+  position: relative;
+}
 
 .navigation {
   display: flex;
@@ -289,6 +293,7 @@ body {
 
 .find-hotel .title {
   padding-top: 0;
+  margin-bottom: 20px;
 }
 
 .find-hotel .text {
@@ -296,11 +301,11 @@ body {
 }
 
 .button-hotel-search {
+  display: inline-block;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
-  height: 52px;
 }
 
 /* Subscription */
@@ -452,7 +457,6 @@ body {
 .filter-container {
   display: grid;
   grid-template-columns: 150px 150px 288px 191px;
-  justify-content: space-between;
 }
 
 /* Legends and Fieldsets */
@@ -495,6 +499,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  align-self: end;
 }
 
 .button-submit {
@@ -556,13 +561,54 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
+  row-gap: 20px;
 }
 
+.catalog-item {
+  width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
 
-.catalog-list h3 {
+.catalog-item article {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
+  padding: 20px;
+}
+
+.hotel-photo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  object-fit: contain;
+}
+
+.hotel-photo img {
+  display: block;
+}
+
+.hotel-name {
+  color: #000000;
+  text-decoration: none;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+.hotel-name h3 {
+  margin: 0;
+}
+
+.housing-type {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /* Catalog Buttons */
