@@ -385,27 +385,24 @@ body {
 .footer-socials {
   padding-top: 45px;
   padding-bottom: 35px;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .footer-socials ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .footer-socials-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 47px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .footer-socials-item a {
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 10px 10px;
 }
 
