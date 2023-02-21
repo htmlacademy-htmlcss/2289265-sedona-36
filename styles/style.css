@@ -479,7 +479,7 @@ body {
 .filter-container {
   width: 1060px;
   display: grid;
-  grid-template-columns: 150px 150px 288px 191px;
+  grid-template-columns: auto auto 288px 191px;
 }
 
 /* Legends and Fieldsets */
