@@ -404,12 +404,12 @@ body {
 }
 
 .footer-socials-item a {
-  display:block;
+  display: block;
   padding: 10px 10px;
 }
 
 .footer-socials-link img {
-  display:block;
+  display: block;
 }
 
 .phone-number {
@@ -476,6 +476,7 @@ body {
 }
 
 .filter-container {
+  width: 1060px;
   display: grid;
   grid-template-columns: 150px 150px 288px 191px;
 }
@@ -600,8 +601,7 @@ body {
 }
 
 .hotel-photo {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1/-1;
   object-fit: contain;
 }
 
@@ -615,8 +615,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1/-1;
 }
 
 
