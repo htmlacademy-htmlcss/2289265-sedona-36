@@ -94,6 +94,10 @@ body {
   margin: 0;
 }
 
+.header-logo {
+  margin-bottom: -10px;
+  position: relative;
+}
 
 .navigation {
   display: flex;
@@ -105,8 +109,9 @@ body {
 .navigation-list {
   padding: 0;
   margin: 0;
+  margin-left: 30px;
   list-style: none;
-  width: 600px;
+  width: 550px;
   display: flex;
   flex-wrap: wrap;
   font-weight: 700;
@@ -156,7 +161,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: auto, cover;
-  height: 485px;
+  min-height: 485px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,6 +294,7 @@ body {
 
 .find-hotel .title {
   padding-top: 0;
+  margin-bottom: 20px;
 }
 
 .find-hotel .text {
@@ -296,11 +302,11 @@ body {
 }
 
 .button-hotel-search {
+  display: inline-block;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
-  height: 52px;
 }
 
 /* Subscription */
@@ -333,6 +339,7 @@ body {
 
 .subscription .title {
   padding-top: 96px;
+  margin-bottom: 20px;
 }
 
 .subscription .text {
@@ -346,13 +353,16 @@ body {
 }
 
 .subscription input {
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   width: 452px;
   height: 52px;
 }
 
 .placeholder {
   border: none;
-  padding: 0;
+  padding: 14px 345px 14px 20px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -367,14 +377,17 @@ body {
   justify-content: space-between;
   width: 1060px;
   min-height: 50px;
-  padding: 40px 70px 30px 70px;
+  padding: 0 70px;
   align-items: center;
 }
 
 .footer-socials {
+  padding-top: 45px;
+  padding-bottom: 35px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer-socials ul {
@@ -383,14 +396,20 @@ body {
 }
 
 .footer-socials-item {
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 40px;
 }
 
 .footer-socials-item a {
-  display: block;
+  display:block;
   padding: 10px 10px;
+}
+
+.footer-socials-link img {
+  display:block;
 }
 
 .phone-number {
@@ -399,6 +418,8 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 
 .phone-number:hover {
@@ -409,7 +430,12 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo a {
+.footer-logo {
+  padding-top: 48px;
+  padding-bottom: 38px;
+}
+
+.footer-logo img {
   display: block;
 }
 
@@ -436,9 +462,13 @@ body {
   line-height: 78px;
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
 }
 
 .bread-crumbs {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
   list-style: none;
   font-weight: 400;
   font-size: 16px;
@@ -446,22 +476,8 @@ body {
 }
 
 .filter-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-container {
-  min-width: 370px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.right-container {
-  min-width: 550px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 150px 150px 288px 191px;
 }
 
 /* Legends and Fieldsets */
@@ -495,10 +511,16 @@ body {
   padding: 0;
 }
 
+.checkbox-list-item:not(:last-child),
+.radio-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .button-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 32px;
+  align-self: end;
 }
 
 .button-submit {
@@ -509,6 +531,7 @@ body {
 .button-reset {
   background: none;
   border: none;
+  padding: 8px 50px;
 }
 
 /* Catalog Navigation */
@@ -559,12 +582,54 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
+  row-gap: 20px;
 }
 
-.catalog-list h3 {
+.catalog-item {
+  width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.catalog-item article {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
+  padding: 20px;
+}
+
+.hotel-photo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  object-fit: contain;
+}
+
+.hotel-photo img {
+  display: block;
+}
+
+.hotel-name {
+  color: #000000;
+  text-decoration: none;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+.hotel-name h3 {
+  margin: 0;
+}
+
+.housing-type {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /* Catalog Buttons */
