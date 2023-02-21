@@ -353,7 +353,7 @@ body {
 }
 
 .subscription input {
-  color: #F2F2F2;
+  background-color: #F2F2F2;
   box-sizing: border-box;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
