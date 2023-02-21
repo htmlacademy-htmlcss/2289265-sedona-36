@@ -145,6 +145,12 @@ body {
   color: inherit;
 }
 
+.user-navigation-link {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .user-navigation-link.button.button-wanted {
   box-sizing: border-box;
   min-height: 36px;
@@ -282,6 +288,24 @@ body {
 .more-advantages-item p {
   padding: 0;
   width: 230px;
+}
+
+.more-advantages-item .house {
+  background-image: url("../images/index/house.svg");
+  background-repeat: no-repeat;
+  background-position: 150px 100px;
+}
+
+.more-advantages-item .food {
+  background-image: url("../images/index/food.svg");
+  background-repeat: no-repeat;
+  background-position: 150px 100px;
+}
+
+.more-advantages-item .souvenir {
+  background-image: url("../images/index/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 150px 100px;
 }
 
 
@@ -602,8 +626,8 @@ body {
   border: 2px solid #E5E5E5;
 }
 
-.view-plates-item .current  {
-  border-color: black ;
+.view-plates-item .current {
+  border-color: black;
 }
 
 .button-tile {
