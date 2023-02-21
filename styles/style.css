@@ -353,6 +353,7 @@ body {
 }
 
 .subscription input {
+  color: #F2F2F2;
   box-sizing: border-box;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -538,6 +539,7 @@ body {
 /* Catalog Navigation */
 
 .catalog {
+  background-color: #FFFFFF;
   padding: 50px 70px 60px;
 }
 
@@ -653,6 +655,7 @@ body {
 /* Pagination */
 
 .pagination {
+  background-color: #FFFFFF;
   width: 1060px;
 }
 
@@ -684,4 +687,8 @@ body {
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
+}
+
+.inner-subscription {
+  background-color: #FFFFFF;
 }
