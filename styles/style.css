@@ -493,6 +493,7 @@ body {
 }
 
 .bread-crumbs {
+  display: flex;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -500,6 +501,14 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.inner-link-home {
+  background-image: url("../images/catalog/home.svg");
+  background-repeat: no-repeat;
+  position:absolute;
+  left: 100px;
+  top: 100px;
 }
 
 .filter-container {
