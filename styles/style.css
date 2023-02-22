@@ -75,6 +75,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   color: #FFFFFF;
   background: #756157;
   text-transform: uppercase;
@@ -84,6 +85,7 @@ body {
   line-height: 20px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 /* Header */
@@ -723,6 +725,10 @@ body {
 .button-favorite {
   background-color: #82B3D3;
   padding: 8px 20px;
+}
+
+.button-in-favorite {
+  background: #7DB54F;
 }
 
 .button-rating {
