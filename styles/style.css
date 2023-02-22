@@ -147,18 +147,19 @@ body {
   color: inherit;
 }
 
-.user-navigation-link {
-  background-image: url("../images/header/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.search,
+.favorite {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .user-navigation-link.button.button-wanted {
   box-sizing: border-box;
   min-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 8px 34px;
+  margin-left: 20px;
 }
 
 /* Main Welcome, Advantages */
@@ -460,12 +461,17 @@ body {
 }
 
 .footer-logo {
+  display: block;
   padding-top: 48px;
   padding-bottom: 38px;
 }
 
-.footer-logo img {
-  display: block;
+.footer-logo svg:hover {
+  color: #756157;
+}
+
+.footer-logo svg:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Catalog */
