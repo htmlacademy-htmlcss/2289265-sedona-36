@@ -454,10 +454,18 @@ body {
   padding: 10px 10px;
 }
 
-.footer-socials-link img {
-  display: block;
+.footer-icon {
+  fill: #83B3D3;
 }
 
+.footer-icon:hover,
+.footer-icon:focus {
+  fill: #68A2CA;
+}
+
+.footer-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
 .phone-number {
   font-weight: 400;
   font-size: 40px;
