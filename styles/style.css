@@ -249,7 +249,6 @@ body {
   padding-left: 112px;
   padding-right: 112px;
   padding-top: 112px;
-
 }
 
 .advantages-item-town h3,
@@ -268,13 +267,10 @@ body {
 
 .advantages-item-town,
 .advantages-item-bridge {
+  position: relative;
+  display: flex;
   background-color: #82B3D3;
   color: #FFFFFF;
-}
-
-.advantages-item-town,
-.advantages-item-bridge {
-  display: flex;
 }
 
 .advantages-item-town p,
@@ -318,8 +314,6 @@ body {
   padding: 0;
   width: 230px;
 }
-
-
 
 .more-advantages-item .house {
   background-image: url("../images/index/house.svg");
@@ -488,12 +482,20 @@ body {
   padding-bottom: 38px;
 }
 
-.footer-logo svg:hover {
-  color: #756157;
+.footer-logo svg {
+  fill: #000000;
+}
+
+.footer-logo svg:hover,
+.footer-logo svg:focus {
+  fill: #756157;
+
 }
 
 .footer-logo svg:active {
-  color: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
+
+
 }
 
 /* Catalog */
@@ -533,18 +535,25 @@ body {
   line-height: 21px;
 }
 
-.inner-link-home {
-  background-image: url("../images/catalog/home.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 100px;
-  top: 100px;
+.home-icon {
+  display: inline-block;
+  fill: #FFFFFF;
+}
+
+.inner-link-catalog::before {
+  content: "";
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: translateY(-1px) rotate(-45deg);
+  margin: 0 13px 0 7px;
 }
 
 .filter-container {
   width: 1060px;
   display: grid;
-  grid-template-columns: auto auto auto 191px;
+  grid-template-columns: 218px 291px auto 191px;
 }
 
 /* Legends and Fieldsets */
@@ -566,8 +575,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
-
+  width: 150px
 }
 
 .checkbox-list,
@@ -580,8 +588,9 @@ body {
   padding: 0;
 }
 
-.filter-radio {
-  margin-right: 140px;
+.checkbox-list-item {
+  margin-right: 0;
+  display: block;
 }
 
 .checkbox-list-item:not(:last-child),
