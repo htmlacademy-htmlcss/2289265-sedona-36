@@ -499,16 +499,17 @@ body {
 }
 
 .footer-logo {
+  width: 115px;
+  height: 33px;
   display: block;
-  padding-top: 45px;
-  padding-bottom: 38px;
+  padding: 0;
 }
 
 .footer-logo svg {
   fill: #000000;
 }
 
-.footer-logo svg:hover{
+.footer-logo svg:hover {
   fill: #756157;
 }
 
@@ -699,6 +700,19 @@ body {
   border: 2px solid #E5E5E5;
 }
 
+.view-plates-item a:hover {
+  border-color: #000000;
+}
+
+.view-plates-item a:active {
+  border-color: #000000;
+}
+
+.view-plates-item a:focus {
+  outline: none;
+  border-color: #68A2CA;
+}
+
 .view-plates-item .current {
   border-color: black;
 }
@@ -792,6 +806,7 @@ body {
   background-repeat: repeat;
   background-position: center;
 }
+
 .button-rating {
   grid-column: 2/3;
   font-weight: 400;
@@ -817,9 +832,10 @@ body {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   box-sizing: border-box;
-  text-align: center;
   width: 60px;
   height: 60px;
   text-decoration: none;
@@ -848,6 +864,7 @@ body {
   line-height: 26px;
   color: black;
   background-color: #FFFFFF;
+  padding: 16px;
 }
 
 .inner-subscription {
