@@ -435,7 +435,7 @@ body {
 
 /* Footer */
 
-.main-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   width: 1060px;
@@ -501,7 +501,7 @@ body {
 
 .footer-logo {
   display: block;
-  padding-top: 48px;
+  padding-top: 45px;
   padding-bottom: 38px;
 }
 
@@ -509,10 +509,8 @@ body {
   fill: #000000;
 }
 
-.footer-logo svg:hover,
-.footer-logo svg:focus {
+.footer-logo svg:hover{
   fill: #756157;
-
 }
 
 .footer-logo svg:active {
@@ -835,6 +833,23 @@ body {
   background: #F2F2F2;
 }
 
+.empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  background-color: #FFFFFF;
+}
+
 .inner-subscription {
+  background-color: #FFFFFF;
+}
+
+.inner-footer {
   background-color: #FFFFFF;
 }
