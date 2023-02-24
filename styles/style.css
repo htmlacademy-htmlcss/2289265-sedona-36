@@ -472,8 +472,7 @@ body {
   fill: #83B3D3;
 }
 
-.footer-icon:hover,
-.footer-icon:focus {
+.footer-icon:hover {
   fill: #68A2CA;
 }
 
@@ -760,7 +759,6 @@ body {
   grid-column: 1/-1;
 }
 
-
 .hotel-name h3 {
   margin: 0;
 }
@@ -789,7 +787,13 @@ body {
   background: #7DB54F;
 }
 
+.star {
+  background-image: url("/images/catalog/star.svg");
+  background-repeat: repeat;
+  background-position: center;
+}
 .button-rating {
+  grid-column: 2/3;
   font-weight: 400;
   color: #333333;
   background: #F2F2F2;
