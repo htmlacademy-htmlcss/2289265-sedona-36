@@ -251,6 +251,20 @@ body {
   padding-top: 112px;
 }
 
+.advantages-item:not(.more-advantages-item) {
+  background-image: url("/images/index/rec.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 52%;
+}
+
+.advantages-item-town div,
+.advantages-item-bridge div {
+  background-image: url("/images/index/rec.png");
+  background-repeat: no-repeat;
+  background-position: 50% 49%;
+}
+
+
 .advantages-item-town h3,
 .advantages-item-bridge h3 {
   padding-top: 102px;
@@ -466,6 +480,7 @@ body {
 .footer-icon:active {
   fill: rgba(104, 162, 202, 0.3);
 }
+
 .phone-number {
   font-weight: 400;
   font-size: 40px;
