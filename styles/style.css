@@ -736,9 +736,9 @@ body {
   margin-bottom: 80px;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 340px);
   padding: 0;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .catalog-item {
@@ -763,18 +763,17 @@ body {
 .hotel-photo img {
   display: block;
 }
-
 .hotel-name {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   grid-column: 1/-1;
+  text-decoration: none;
 }
 
 .hotel-name h3 {
   margin: 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .housing-type {
