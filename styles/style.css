@@ -156,18 +156,18 @@ body {
 }
 
 .favorite-amount {
+  position: absolute;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #7DB54F;
   color: #FFFFFF;
   text-align: center;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 10px;
-  position: absolute;
   width: 20px;
   height: 20px;
   left: 20px;
@@ -182,6 +182,16 @@ body {
   text-transform: uppercase;
   padding: 8px 34px;
   margin-left: 20px;
+}
+
+.button-wanted:hover,
+.button-wanted:focus {
+  background: #615048;
+}
+
+.button-wanted:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Main Welcome, Advantages */
@@ -700,11 +710,49 @@ body {
   padding: 8px 50px;
 }
 
+.button-submit:hover,
+.button-submit:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.button-submit:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.button-submit:disabled,
+.button-details:disabled,
+.button-favorite:disabled,
+.button-in-favorite:disabled
+.button-wanted {
+ background: #E5E5E5;
+}
+
+
 .button-reset {
   background: none;
   border: none;
   padding: 8px 50px;
 }
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
+}
+
+.button-reset:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+}
+
 
 /* Catalog Navigation */
 
@@ -861,13 +909,45 @@ body {
   padding: 8px 26px;
 }
 
+.button-details:hover,
+.button-details:focus {
+  background: #615048;
+}
+
+.button-details:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-favorite {
   background-color: #82B3D3;
   padding: 8px 20px;
 }
 
+.button-favorite:hover,
+.button-favorite:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.button-favorite:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .button-in-favorite {
   background: #7DB54F;
+}
+
+.button-in-favorite:hover,
+.button-in-favorite:focus {
+  outline: none;
+  background: #6C9E42;
+}
+
+.button-in-favorite:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F ;
 }
 
 .star {
