@@ -404,6 +404,17 @@ body {
   height: 52px;
 }
 
+.subscription-button:hover,
+.subscription-button:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.subscription-button:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .main-subscription .title,
 .main-subscription .text {
   color: #FFFFFF;
@@ -724,8 +735,9 @@ body {
 .button-submit:disabled,
 .button-details:disabled,
 .button-favorite:disabled,
-.button-in-favorite:disabled
-.button-wanted {
+.button-in-favorite:disabled,
+.subscription-button:disabled,
+.button-wanted:disabled {
  background: #E5E5E5;
 }
 
