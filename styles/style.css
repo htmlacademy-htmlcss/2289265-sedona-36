@@ -997,6 +997,16 @@ body {
   padding: 10px;
 }
 
+.pagination-link:hover:not(.pagination-current,.empty),
+.pagination-link:focus:not(.pagination-current,.empty) {
+  background: #68A2CA;
+}
+
+.pagination-link:active:not(.pagination-current,.empty) {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
