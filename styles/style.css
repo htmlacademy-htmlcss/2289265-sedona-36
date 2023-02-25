@@ -138,7 +138,18 @@ body {
   left: 16px;
   height: 2px;
   background-color: #756257;
-  content:"";
+  content: "";
+}
+
+.navigation-link.hotels.current:after {
+  position: absolute;
+  width: 93px;
+  right: 20px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .user-navigation-list {
@@ -169,7 +180,6 @@ body {
 
 .favorite-amount {
   position: absolute;
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -614,6 +624,16 @@ body {
   margin: 0 13px 0 7px;
 }
 
+.inner-link-catalog:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.inner-link-catalog:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .filter-container {
   min-height: 160px;
   width: 1060px;
@@ -653,9 +673,7 @@ body {
 }
 
 .checkbox-input:focus + .checkbox-custom {
-  outline: none;
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
+  outline: 3px solid #83B3D3;
 }
 
 .radio-input {
@@ -688,8 +706,7 @@ body {
 }
 
 .radio-input:focus + .radio-custom {
-  outline: none;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 18px;
 }
 
@@ -789,8 +806,7 @@ body {
 }
 
 .button-reset:focus {
-  outline: none;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 
@@ -828,7 +844,6 @@ body {
   width: 292px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -837,7 +852,7 @@ body {
   padding-left: 18px;
   padding-right: auto;
   background-image: url("../images/catalog/arrow-down.svg");
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
   background-position: 258px 17px;
 }
 
@@ -1075,7 +1090,6 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
