@@ -273,14 +273,14 @@ body {
 }
 
 .advantages-item:not(.more-advantages-item) {
-  background-image: url("/images/index/rec.svg");
+  background-image: url("../images/index/rec.svg");
   background-repeat: no-repeat;
   background-position: 50% 52%;
 }
 
 .advantages-item-town div,
 .advantages-item-bridge div {
-  background-image: url("/images/index/rec.png");
+  background-image: url("../images/index/rec.png");
   background-repeat: no-repeat;
   background-position: 50% 49%;
 }
@@ -648,7 +648,7 @@ body {
 }
 
 .checkbox-input:checked + .checkbox-custom {
-  background-image: url("/images/catalog/checked.svg");
+  background-image: url("../images/catalog/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -681,7 +681,7 @@ body {
 }
 
 .radio-input:checked + .radio-custom {
-  background-image: url("/images/catalog/radio.svg");
+  background-image: url("../images/catalog/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -853,7 +853,6 @@ body {
 .catalog-sorting-select [aria-label] {
   padding: 14px 20px;
 }
-
 
 .view-plates-list {
   list-style: none;
