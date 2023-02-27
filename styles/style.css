@@ -591,6 +591,10 @@ body {
   line-height: 21px;
 }
 
+.inner-link-home {
+  text-decoration: none;
+}
+
 .home-icon {
   display: inline-block;
   fill: #FFFFFF;
@@ -604,7 +608,7 @@ body {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.bread-crumbs li::after {
+.bread-crumbs li:not(:last-child):after {
   content: "";
   border: solid white;
   border-width: 0 2px 2px 0;
@@ -654,6 +658,10 @@ body {
   background-position: center;
 }
 
+.checkbox-input:disabled + .checkbox-custom {
+  opacity: 0.1;
+}
+
 .checkbox-text {
   padding-left: 36px;
 }
@@ -692,7 +700,11 @@ body {
 }
 
 .radio-text:hover {
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+.radio-input:disabled + .radio-custom {
+opacity: 0.2;
 }
 
 .radio-input:focus + .radio-custom {
@@ -808,7 +820,6 @@ body {
 .range-scale {
   position: relative;
   margin-bottom: 0;
-  border-radius: 2px;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -851,7 +862,7 @@ body {
   margin-bottom: 44px;
   display: flex;
   justify-content: center;
-  gap: 2px;
+  gap: 3px;
 }
 
 .catalog-filter-label {
@@ -862,7 +873,7 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background: rgba(242, 242, 242, 1);
   color: #000000;
 }
 
@@ -870,6 +881,14 @@ body {
   border-radius: 0;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.catalog-filter-label:hover {
+  outline: 3px solid rgba(131, 179, 211, 1)
+}
+
+.input-absolute {
+  color: rgba(0,0,0, 0.3)
 }
 
 .range-input {
@@ -882,8 +901,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   border: none;
+  outline: none;
   appearance: textfield;
-  background-color: none;
+  background: rgba(242, 242, 242, 1);
+
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1104,7 +1125,7 @@ body {
 .stars {
   background-image: url("../images/catalog/star.svg");
   background-repeat: space;
-  background-position: 10px 100px;
+  align-self: center;
   width: 140px;
   height: 17px;
 }
@@ -1112,24 +1133,24 @@ body {
 .four-stars {
   background-image: url("../images/catalog/star.svg");
   background-repeat: space;
-  background-position: 20% 20%;
-  width: 80px;
+  align-self: center;
+  width: 89px;
   height: 17px;
 }
 
 .three-stars {
   background-image: url("../images/catalog/star.svg");
   background-repeat: space;
-  background-position: 20% 20%;
-  width: 60px;
+  align-self: center;
+  width: 66px;
   height: 17px;
 }
 
 .two-starts {
   background-image: url("../images/catalog/star.svg");
   background-repeat: space;
-  background-position: 20% 20%;
-  width: 40px;
+  align-self: center;
+  width: 43px;
   height: 17px;
 }
 

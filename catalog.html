@@ -79,9 +79,6 @@
           <li>
             <a class="inner-link-catalog">Гостиницы</a>
           </li>
-          <li>
-            <a class="inner-link-catalog">Гостиницы</a>
-          </li>
         </ol>
 
         <h2 class="visually-hidden">Фильтр поиска</h2>
@@ -92,14 +89,14 @@
             <ul class="checkbox-list">
               <li class="checkbox-list-item">
                 <label class="checkbox-text">
-                  <input class="checkbox-input" type="checkbox" name="pool" checked>
+                  <input class="checkbox-input" type="checkbox" name="pool" checked disabled>
                   <span class="checkbox-custom"></span>
                   Бассейн
                 </label>
               </li>
               <li class="checkbox-list-item">
                 <label class="checkbox-text">
-                  <input class="checkbox-input" type="checkbox" name="parking" checked>
+                  <input class="checkbox-input" type="checkbox" name="parking" checked disabled>
                   <span class="checkbox-custom"></span>
                   Парковка
                 </label>
@@ -108,7 +105,7 @@
                 <label class="checkbox-text">
                   <input class="checkbox-input" type="checkbox" name="wi-fi">
                   <span class="checkbox-custom"></span>
-                  Wi-Fi
+                 <span>Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -126,14 +123,14 @@
               </li>
               <li class="radio-list-item">
                 <label class="radio-text">
-                  <input class="radio-input" type="radio" name="type-of-housing" value="motel">
+                  <input class="radio-input" type="radio" name="type-of-housing" value="motel" disabled>
                   <span class="radio-custom"></span>
                   Мотель
                 </label>
               </li>
               <li class="radio-list-item">
                 <label class="radio-text">
-                  <input class="radio-input" type="radio" name="type-of-housing" value="apartaments">
+                  <input class="radio-input" type="radio" name="type-of-housing" value="apartaments" disabled>
                   <span class="radio-custom"></span>
                   Апартаменты
                 </label>
@@ -149,16 +146,16 @@
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
                   <input class="range-input" type="number" value="0" name="min-price">
-                  <span>от</span>
+                  <span class="input-absolute">от</span>
                 </label>
                 <label class="catalog-filter-label">
                   <input class="range-input" type="number" value="9000" name="max-price">
-                  <span>до</span>
+                  <span class="input-absolute">до</span>
                 </label>
               </div>
 
               <div class="range-scale">
-                <div class="range-bar" style="left: 8px; bottom: -2px; width: 207px">
+                <div class="range-bar" style="left: 5px; bottom: -2px; width: 207px">
                   <button class="range-toggle toggle-min">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
