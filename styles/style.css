@@ -1264,8 +1264,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-window {
-  background-color: #FFFFFF;
+.modal-window-container {
+  margin: auto;
+  background-color: lightblue;
+  border-radius: 30px;
   padding: 64px 70px;
   width: 717px;
   height: 576px;
@@ -1277,7 +1279,7 @@ body {
   border-radius: 4px;
 }
 
-.modal-dates {
+.modal-window {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -1287,8 +1289,14 @@ body {
   padding: 0;
   border: none;
   display: grid;
-  grid-template-columns: 145px auto 50px auto;
+  grid-template-columns: 1fr 1fr;
   row-gap: 48px;
+}
+
+.date-in-container {
+  display: grid;
+  grid-template-columns: 140px 1fr min-content;
+  grid-column: 1/-1;
 }
 
 .date-in {
@@ -1302,15 +1310,39 @@ body {
 }
 
 .input-date-in {
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   appearance: textfield;
   padding: 12px 20px;
   padding-right: auto;
-  grid-column: 2/5;
+
+}
+
+.calendar-icon {
+grid-column: 3/4;
+background-image: url("../images/index/modal-date.svg");
+background-repeat: no-repeat;
+background-position: center;
+width: 48px;
+border:none;
+}
+
+.input-date-in::placeholder {
+  color:black;
+}
+
+.date-out-container {
+  display: grid;
+  grid-column: 1/-1;
 }
 
 .date-out {
   grid-column: 1/2;
-  align-self: center;
+
 }
 
 .input-date-out {
