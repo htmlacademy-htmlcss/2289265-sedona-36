@@ -21,7 +21,7 @@
         </a>
 
         <ul class="navigation-list">
-          <li><a class="navigation-link current">Главная</a></li>
+          <li><a class="navigation-link navigation-link-current">Главная</a></li>
           <li><a class="navigation-link" href="about.html">О седоне</a></li>
           <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -235,47 +235,50 @@
 
     <!-- Модальное окно -->
 
-    <form class="modal-window" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="modal-dates">
-        <label class="date-in" for="modal-date-in">
-          Дата заезда:
-        </label>
+    <div class="modal-container">
+      <modal cla
+      <button type="button" class="button-close"><span class="visually-hidden">Закрыть.</span></button>
+      <form class="modal-window" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="modal-dates">
+          <label class="date-in" for="modal-date-in">
+            Дата заезда:
+          </label>
 
-        <input class="input-date-in" id="modal-date-in" type="date" name="date-in" placeholder="272020">
+          <input class="input-date-in" id="modal-date-in" type="date" name="date-in" placeholder="272020">
 
-        <span class="visually-hidden">Мы не можем отправить вас в прошлое.</span>
+          <span class="visually-hidden">Мы не можем отправить вас в прошлое.</span>
 
-        <label class="date-out" for="modal-date-out">
-          Дата выезда:
-        </label>
+          <label class="date-out" for="modal-date-out">
+            Дата выезда:
+          </label>
 
-        <input class="input-date-out" id="modal-date-out" type="date" name="date-out">
+          <input class="input-date-out" id="modal-date-out" type="date" name="date-out">
 
-        <span class="visually-hidden">На эти даты есть свободные номера. Пока есть.</span>
+          <span class="visually-hidden">На эти даты есть свободные номера. Пока есть.</span>
 
-        <label class="adults" for="amount-adults">
-          Взрослые:
-        </label>
+          <label class="adults" for="amount-adults">
+            Взрослые:
+          </label>
 
-        <input class="input-adults" type="number" min="0" max="5" step="1" id="amount-adults" name="amount-adults">
+          <input class="input-adults" type="number" min="0" max="5" step="1" id="amount-adults" name="amount-adults">
 
-        <label class="kids" for="amount-kids">
-          Дети:
-        </label>
+          <label class="kids" for="amount-kids">
+            Дети:
+          </label>
 
-        <span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-          лет.
-          Дети до 6 лет размещаются бесплатно.
-        </span>
+          <span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+            лет.
+            Дети до 6 лет размещаются бесплатно.
+          </span>
 
-        <input class="input-kids" type="number" min="0" max="5" step="1" id="amount-kids" name="amount-kids">
+          <input class="input-kids" type="number" min="0" max="5" step="1" id="amount-kids" name="amount-kids">
 
-        <button class="button button-find" type="submit">
-          Найти
-        </button>
-      </fieldset>
-    </form>
-    <button type="button" class="button button-close"><span class="visually-hidden">Закрыть.</span></button>
+          <button class="button button-find" type="submit">
+            Найти
+          </button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 
 </html>
