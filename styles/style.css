@@ -1422,7 +1422,7 @@ body {
 .pop-up-button {
   position: absolute;
   top: 11px;
-  left: 55px;
+  left: 59px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -1468,7 +1468,7 @@ body {
 
 .kids-text {
   align-self: center;
-  margin-right: 46px;
+  margin-right: 83px;
 }
 
 .input-kids {
