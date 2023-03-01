@@ -1428,10 +1428,10 @@ body {
 }
 
 .pop-up {
+  display: none;
   position: absolute;
   top: 70px;
   left: -50px;
-  display: nne;
   box-sizing: border-box;
   width: 256px;
   background-color: #333333;
