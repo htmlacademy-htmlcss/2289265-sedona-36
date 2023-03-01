@@ -24,7 +24,7 @@
         <ul class="navigation-list">
           <li><a class="navigation-link" href="index.html">Главная</a></li>
           <li><a class="navigation-link" href="about.html">О седоне</a></li>
-          <li><a class="navigation-link hotels current">Гостиницы</a></li>
+          <li><a class="navigation-link navigation-link-current">Гостиницы</a></li>
         </ul>
 
         <ul class="user-navigation-list">
@@ -90,14 +90,14 @@
             <ul class="checkbox-list">
               <li class="checkbox-list-item">
                 <label class="checkbox-text">
-                  <input class="checkbox-input" type="checkbox" name="pool" checked>
+                  <input class="checkbox-input" type="checkbox" name="pool" checked disabled>
                   <span class="checkbox-custom"></span>
                   Бассейн
                 </label>
               </li>
               <li class="checkbox-list-item">
                 <label class="checkbox-text">
-                  <input class="checkbox-input" type="checkbox" name="parking" checked>
+                  <input class="checkbox-input" type="checkbox" name="parking" checked disabled>
                   <span class="checkbox-custom"></span>
                   Парковка
                 </label>
@@ -106,7 +106,7 @@
                 <label class="checkbox-text">
                   <input class="checkbox-input" type="checkbox" name="wi-fi">
                   <span class="checkbox-custom"></span>
-                  Wi-Fi
+                 <span>Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -124,14 +124,14 @@
               </li>
               <li class="radio-list-item">
                 <label class="radio-text">
-                  <input class="radio-input" type="radio" name="type-of-housing" value="motel">
+                  <input class="radio-input" type="radio" name="type-of-housing" value="motel" disabled>
                   <span class="radio-custom"></span>
                   Мотель
                 </label>
               </li>
               <li class="radio-list-item">
                 <label class="radio-text">
-                  <input class="radio-input" type="radio" name="type-of-housing" value="apartaments">
+                  <input class="radio-input" type="radio" name="type-of-housing" value="apartaments" disabled>
                   <span class="radio-custom"></span>
                   Апартаменты
                 </label>
@@ -141,7 +141,33 @@
 
           <fieldset class="filter-price">
             <legend class="filter-price-title">Стоимость, ₽:</legend>
+
+            <div class="range">
+
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="0" name="min-price">
+                  <span class="input-absolute">от</span>
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="9000" name="max-price">
+                  <span class="input-absolute">до</span>
+                </label>
+              </div>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 5px; bottom: -2px; width: 207px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
+
           <div class="button-wrap">
             <button class="button button-submit" type="submit">Применить</button>
             <button class="button button-reset" type="reset">Сбросить</button>
@@ -210,10 +236,6 @@
                   в избранное
                 </button>
                 <div class="stars four-stars">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
                 </div>
                 <span class="button button-rating">Рейтинг: 8,5</span>
               </article>
@@ -238,10 +260,6 @@
                   в избранном
                 </button>
                 <div class="stars four-stars">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
                 </div>
                 <span class="button button-rating">Рейтинг: 9,2</span>
               </article>
@@ -266,9 +284,6 @@
                   в избранное
                 </button>
                 <div class="stars three-stars">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
                 </div>
                 <span class="button button-rating">Рейтинг: 6,9</span>
               </article>
@@ -293,8 +308,6 @@
                   в избранное
                 </button>
                 <div class="stars two-starts">
-                  <img src="images/catalog/star.svg" alt="">
-                  <img src="images/catalog/star.svg" alt="">
                 </div>
                 <span class="button button-rating">Рейтинг: 5,0</span>
               </article>
@@ -345,7 +358,7 @@
         <h3 class="visually-hidden">Седона в социальных сетях</h3>
         <ul class="footer-socials">
           <li class="footer-socials-item">
-            <a href="https://vk.com/htmlacademy">
+            <a class="footer-socials-link" href="https://vk.com/htmlacademy">
               <svg class="footer-icon" width="25" height="14" viewBox="0 0 25 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -357,7 +370,7 @@
           </li>
 
           <li class="footer-socials-item">
-            <a href="https://t.me/htmlacademy">
+            <a class="footer-socials-link" href="https://t.me/htmlacademy">
               <svg class="footer-icon" width="19" height="16" viewBox="0 0 19 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -369,7 +382,7 @@
           </li>
 
           <li class="footer-socials-item">
-            <a href="https://youtube.com/user/htmlacademy">
+            <a class="footer-socials-link" href="https://youtube.com/user/htmlacademy">
               <svg class="footer-icon" width="23" height="18" viewBox="0 0 23 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
