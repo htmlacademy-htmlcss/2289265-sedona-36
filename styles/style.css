@@ -1141,27 +1141,15 @@ body {
 }
 
 .four-stars {
-  background-image: url("../images/catalog/star.svg");
-  background-repeat: space;
-  align-self: center;
   width: 89px;
-  height: 17px;
 }
 
 .three-stars {
-  background-image: url("../images/catalog/star.svg");
-  background-repeat: space;
-  align-self: center;
   width: 66px;
-  height: 17px;
 }
 
 .two-starts {
-  background-image: url("../images/catalog/star.svg");
-  background-repeat: space;
-  align-self: center;
   width: 43px;
-  height: 17px;
 }
 
 .button-rating {
