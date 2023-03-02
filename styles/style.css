@@ -1555,7 +1555,7 @@ body {
   border-radius: 50%;
   right: 52px;
   top: 65px;
-  background-image: url(../images/index/modal-cross.svg);
+  background-image: url("../images/index/modal-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
