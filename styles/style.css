@@ -720,6 +720,10 @@ body {
   margin-bottom: 32px;
 }
 
+.filter-price-title {
+  margin-bottom: 33px;
+}
+
 .filter-checkbox-title {
   margin-left: -2px;
 }
@@ -814,6 +818,7 @@ body {
 
 .range {
   width: 288px;
+  padding-left: 3px;
 }
 
 .range-scale {
@@ -918,7 +923,7 @@ body {
 
 .catalog {
   background-color: #FFFFFF;
-  padding: 51px 70px 60px;
+  padding: 50px 70px 60px;
   padding-left: 69px;
 }
 
@@ -984,7 +989,7 @@ body {
   gap: 8px;
   padding: 0;
   margin: 0;
-  margin-left: 70px;
+  margin-left: 72px;
   margin-top: -5px;
 }
 
