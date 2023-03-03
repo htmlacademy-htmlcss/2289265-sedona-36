@@ -907,7 +907,6 @@ body {
   outline: none;
   appearance: textfield;
   background: rgba(242, 242, 242, 1);
-
 }
 
 .range-input::-webkit-outer-spin-button,

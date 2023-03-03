@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" sizes="32x32" href="favicon.ico">
     <link rel="icon" type="image/svg" sizes="32x32" href="images/favicon.svg">
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -51,7 +50,7 @@
             </a>
           </li>
           <li>
-            <a class="user-navigation-link button button-wanted" href="#">Хочу сюда!</a>
+            <button class="user-navigation-link button button-wanted" href="#">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -89,14 +88,14 @@
             <ul class="checkbox-list">
               <li class="checkbox-list-item">
                 <label class="checkbox-text">
-                  <input class="checkbox-input" type="checkbox" name="pool" checked disabled>
+                  <input class="checkbox-input" type="checkbox" name="pool" checked>
                   <span class="checkbox-custom"></span>
                   Бассейн
                 </label>
               </li>
               <li class="checkbox-list-item">
                 <label class="checkbox-text">
-                  <input class="checkbox-input" type="checkbox" name="parking" checked disabled>
+                  <input class="checkbox-input" type="checkbox" name="parking" checked>
                   <span class="checkbox-custom"></span>
                   Парковка
                 </label>
@@ -123,14 +122,14 @@
               </li>
               <li class="radio-list-item">
                 <label class="radio-text">
-                  <input class="radio-input" type="radio" name="type-of-housing" value="motel" disabled>
+                  <input class="radio-input" type="radio" name="type-of-housing" value="motel">
                   <span class="radio-custom"></span>
                   Мотель
                 </label>
               </li>
               <li class="radio-list-item">
                 <label class="radio-text">
-                  <input class="radio-input" type="radio" name="type-of-housing" value="apartaments" disabled>
+                  <input class="radio-input" type="radio" name="type-of-housing" value="apartaments">
                   <span class="radio-custom"></span>
                   Апартаменты
                 </label>
@@ -156,10 +155,10 @@
 
               <div class="range-scale">
                 <div class="range-bar" style="left: 5px; bottom: -2px; width: 207px">
-                  <button class="range-toggle toggle-min">
+                  <button class="button range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="button range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
