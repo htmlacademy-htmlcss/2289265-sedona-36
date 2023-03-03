@@ -1272,7 +1272,7 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   width: 717px;
-  height: 576px;
+  min-height: 576px;
 }
 
 .modal-heading {
