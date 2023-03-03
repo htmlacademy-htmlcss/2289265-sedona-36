@@ -253,7 +253,7 @@
             </label>
             <input class="input-date-in" id="modal-date-in" type="text" name="date-in" placeholder="Укажите дату">
             <button class="calendar-icon" type="button"></button>
-            <span class="visually-hidden">Мы не можем отправить вас в прошлое.</span>
+            <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
           </div>
 
           <div class="date-out-container">
@@ -262,14 +262,14 @@
             </label>
             <input class="input-date-out" id="modal-date-out" type="text" name="date-out" placeholder="Укажите дату">
             <button class="calendar-icon" type="button"></button>
-            <span class="visually-hidden">На эти даты есть свободные номера. Пока есть.</span>
+            <span class="modal-text text-result">На эти даты есть свободные номера. Пока есть.</span>
           </div>
 
           <div class="amount-of-people">
 
             <div class="adults adults-container">
-              <label for="amount-adults">
-                <span class="adults-text">Взрослые:</span>
+              <label class="adults-text" for="amount-adults">
+                Взрослые:
               </label>
 
               <button class="button-minus" type="button">
@@ -288,23 +288,19 @@
 
             <div class="kids kids-container">
               <div class="kids-tool-tip">
-                <label class="kids" for="amount-kids">
-                  <span class="kids-text">
-                    Дети:
-                  </span>
+                <label class="kids-text" for="amount-kids">
+                  Дети:
                 </label>
 
                 <button class="tool-tip-button" type="button">
                   <span class="visually-hidden">Показать дополнительную информацию</span>
                 </button>
-                <div class="tool-tip">
-                  <p class="tool-tip-text visually-hidden">Укажите количество детей, которые будут с вами,
+                  <p class="tool-tip tool-tip-text">Укажите количество детей, которые будут с вами,
                     возраст
                     которых от 6 до 18
                     лет.
                     Дети до 6 лет размещаются бесплатно.
                   </p>
-                </div>
               </div>
 
               <button class="button-minus" type="button">

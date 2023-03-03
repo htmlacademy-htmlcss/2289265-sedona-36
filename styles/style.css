@@ -1307,7 +1307,7 @@ body {
   border: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 48px;
+  row-gap: 23px;
 }
 
 .date-in-container {
@@ -1325,7 +1325,6 @@ body {
   margin: 0;
   grid-column: 1/2;
   text-transform: capitalize;
-
 }
 
 .input-date-in {
@@ -1400,6 +1399,22 @@ body {
   outline: 3px solid #83B3D3;
 }
 
+.modal-text {
+  grid-column: 2/4;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+}
+
+.text-result {
+  color: #333333;
+}
+
 /* Amount Of People */
 
 .amount-of-people {
@@ -1458,12 +1473,12 @@ body {
 }
 
 .tool-tip {
-  display: none;
+  display: non;
   position: absolute;
   z-index: 2;
   width: 256px;
   min-height: 143px;
-  top: 41px;
+  top: 37px;
   right: -116px;
   box-sizing: border-box;
   background-color: #333333;
@@ -1476,10 +1491,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  padding: 19px 18px 18px 22px;
 }
 
-.tool-tip-button:hover ~ .tool-tip,
-.tool-tip-button:focus ~ .tool-tip {
+.tool-tip-button:hover + .tool-tip,
+.tool-tip-button:focus + .tool-tip {
   display: block;
 }
 
@@ -1492,11 +1508,6 @@ body {
   left: 117px;
   background-image: url("../images/index/modal-pop-up-triangle.svg");
   background-repeat: no-repeat;
-}
-
-.tool-tip-text {
-  margin: 0;
-  padding: 19px 18px 18px 22px;
 }
 
 .kids-text {
@@ -1577,6 +1588,7 @@ body {
   grid-column: 1/-1;
   padding: 18px 256px;
   border-radius: 10px;
+  margin-top: 25px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
