@@ -787,15 +787,9 @@ body {
   opacity: 0.3;
 }
 
-.button-submit:disabled,
-.button-details:disabled,
-.button-favorite:disabled,
-.button-in-favorite:disabled,
-.subscription-button:disabled,
-.button-wanted:disabled {
+.button:disabled {
   background: #E5E5E5;
 }
-
 
 .button-reset {
   background: none;
@@ -1265,7 +1259,7 @@ body {
 }
 
 .modal-container-close {
-  display: non;
+  display: none;
 }
 
 .modal-section {
@@ -1556,6 +1550,7 @@ body {
 
 .button-minus,
 .button-plus {
+  background-color: #F2F2F2;
   width: 40px;
   height: 48px;
   border: none;
