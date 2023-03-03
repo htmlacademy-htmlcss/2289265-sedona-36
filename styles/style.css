@@ -622,6 +622,7 @@ body {
 }
 
 .inner-link-catalog:hover {
+  cursor: pointer;
   color: #FFFFFF;
   opacity: 0.6;
 }
@@ -787,7 +788,7 @@ body {
 }
 
 .button:disabled {
-  pointer-events: none;
+  cursor: default;
   background: #E5E5E5;
 }
 
