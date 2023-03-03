@@ -319,6 +319,12 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item img {
+  object-fit: contain;
+}
+
+/* More Advantages */
+
 .more-advantages-list h3 {
   margin-bottom: 30px;
 }
