@@ -1389,6 +1389,7 @@ body {
 .input-date-out:hover {
   background: #E6E6E6;
 }
+
 .input-date-in:focus,
 .input-date-out:focus {
   outline: 3px solid #83B3D3;
@@ -1429,10 +1430,17 @@ body {
   display: flex;
 }
 
-.pop-up-button {
-  position: absolute;
-  top: 11px;
-  left: 59px;
+.kids-tool-tip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  margin-right: 47px;
+  flex-wrap: wrap;
+}
+
+.tool-tip-button {
+  position: relative;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -1442,16 +1450,16 @@ body {
   background-image: url("../images/index/icon-info.svg");
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
-.pop-up {
+.tool-tip {
   display: none;
   position: absolute;
+  z-index: 2;
   width: 256px;
   min-height: 143px;
   top: 41px;
-  right: -115px;
+  right: -116px;
   box-sizing: border-box;
   background-color: #333333;
   color: #FFFFFF;
@@ -1465,11 +1473,12 @@ body {
   line-height: 20px;
 }
 
-.pop-up-button:hover .pop-up {
+.tool-tip-button:hover .tool-tip,
+.tool-tip-button:focus .tool-tip {
   display: block;
 }
 
-.pop-up::before {
+.tool-tip::before {
   position: absolute;
   content: "";
   width: 20px;
@@ -1480,14 +1489,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.pop-up-text {
+.tool-tip-text {
   margin: 0;
   padding: 19px 18px 18px 22px;
 }
 
 .kids-text {
   align-self: center;
-  margin-right: 83px;
 }
 
 .input-kids {
@@ -1563,6 +1571,7 @@ body {
 .button-find {
   grid-column: 1/-1;
   padding: 18px 256px;
+  border-radius: 10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1575,7 +1584,7 @@ body {
   outline: none;
 }
 
-.button-find:active  {
+.button-find:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1598,7 +1607,8 @@ body {
 }
 
 .button-close:focus {
-  outline: 3px solid #83B3D3; ;
+  outline: 3px solid #83B3D3;
+  ;
 }
 
 .button-close:active {
