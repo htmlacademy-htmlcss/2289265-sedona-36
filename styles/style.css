@@ -96,16 +96,15 @@ body {
   margin: 0;
 }
 
+.navigation {
+  display: flex;
+  min-height: 64px;
+  margin: 0 70px;
+}
+
 .header-logo {
   margin-bottom: -10px;
   position: relative;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  min-height: 64px;
-  margin: 0 70px;
 }
 
 .navigation-list {
@@ -1260,7 +1259,7 @@ body {
 }
 
 .modal-container-close {
-  display: non;
+  display: none;
 }
 
 .modal-section {
