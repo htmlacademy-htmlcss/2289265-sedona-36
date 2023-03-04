@@ -256,6 +256,7 @@ body {
 }
 
 .advantages-item {
+  position: relative;
   background: rgba(131, 179, 211, 0.12);
 }
 
@@ -274,17 +275,12 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 61px;
   padding-left: 112px;
   padding-right: 112px;
-  padding-top: 112px;
+  padding-top: 114px;
 }
 
-.advantages-item:not(.more-advantages-item) {
-  background-image: url("../images/index/rec.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 52%;
-}
 
 .advantages-item-town div,
 .advantages-item-bridge div {
@@ -293,6 +289,15 @@ body {
   background-position: 50% 49%;
 }
 
+
+.advantages-item-text.advantages-square::after {
+  width: 60px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translate(170px, 199px);
+}
 
 .advantages-item-town h3,
 .advantages-item-bridge h3 {
@@ -329,10 +334,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item img {
-  object-fit: contain;
-}
-
 /* More Advantages */
 
 .more-advantages-list h3 {
@@ -341,12 +342,12 @@ body {
 
 .more-advantages-text {
   text-align: center;
-  padding: 64px 350px;
+  padding: 65px 350px;
 }
 
 .more-advantages-text .title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .advantages-item-food {
@@ -1253,13 +1254,13 @@ body {
 }
 
 .pagination-current {
-  cursor:default;
+  cursor: default;
   color: #000000;
   background: #F2F2F2;
 }
 
 .empty {
-  cursor:default;
+  cursor: default;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -1293,7 +1294,7 @@ body {
 }
 
 .modal-container-close {
-  display: non;
+  display: none;
 }
 
 .modal-section {
@@ -1370,8 +1371,8 @@ body {
 }
 
 .modal-input:not(:placeholder-shown) {
-  background:  #F2F2F2;
-  outline: 2px solid #000000 ;
+  background: #F2F2F2;
+  outline: 2px solid #000000;
 }
 
 .calendar-icon {
