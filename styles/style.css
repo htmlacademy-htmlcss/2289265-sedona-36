@@ -737,7 +737,7 @@ body {
 }
 
 .filter-price-title {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .filter-checkbox-title {
@@ -768,6 +768,11 @@ body {
 .checkbox-list-item {
   margin-right: 0;
   display: block;
+}
+
+.checkbox-text,
+.radio-text {
+padding-right: 5px;
 }
 
 .checkbox-list-item:not(:last-child),
