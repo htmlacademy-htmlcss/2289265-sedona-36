@@ -284,7 +284,7 @@ body {
 
 .advantages-item-town div,
 .advantages-item-bridge div {
-  background-image: url("../images/index/rec.png");
+  background-image: url("../images/index/rectangle.png");
   background-repeat: no-repeat;
   background-position: 50% 49%;
 }
@@ -1382,7 +1382,7 @@ padding-right: 5px;
 
 .calendar-icon {
   grid-column: 3/4;
-  background-image: url("../images/index/modal-date.svg");
+  background-image: url("../images/modal-window/modal-date.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 60px;
@@ -1491,7 +1491,7 @@ padding-right: 5px;
   border: none;
   outline: none;
   background-color: #83B3D3;
-  background-image: url("../images/index/icon-info.svg");
+  background-image: url("../images/modal-window/modal-info.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1530,7 +1530,7 @@ padding-right: 5px;
   height: 20px;
   top: -9px;
   left: 117px;
-  background-image: url("../images/index/modal-pop-up-triangle.svg");
+  background-image: url("../images/modal-window/modal-pop-up-triangle.svg");
   background-repeat: no-repeat;
 }
 
@@ -1639,7 +1639,7 @@ padding-right: 5px;
   background-color: #F2F2F2;
   right: 52px;
   top: 65px;
-  background-image: url("../images/index/modal-cross.svg");
+  background-image: url("../images/modal-window/modal-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
