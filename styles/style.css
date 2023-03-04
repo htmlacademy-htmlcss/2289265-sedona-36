@@ -1355,7 +1355,7 @@ body {
   text-transform: capitalize;
 }
 
-.input-date-in {
+.modal-input {
   z-index: 1;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -1369,6 +1369,10 @@ body {
   border-bottom-left-radius: 4px;
 }
 
+.modal-input:not(:placeholder-shown) {
+  background:  #F2F2F2;
+  outline: 2px solid #000000 ;
+}
 
 .calendar-icon {
   grid-column: 3/4;
@@ -1396,20 +1400,6 @@ body {
   margin: 0;
   grid-column: 1/2;
   text-transform: capitalize;
-}
-
-.input-date-out {
-  z-index: 1;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  appearance: textfield;
-  padding: 12px 20px;
-  padding-right: auto;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 
 .input-date-in::placeholder,
