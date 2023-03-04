@@ -926,6 +926,14 @@ body {
   background-color: #E6E6E6;
 }
 
+.range-input:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+}
+
+.range-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .range-input:active {
   outline: 2px solid #000000;
   background-color: #F2F2F2;
