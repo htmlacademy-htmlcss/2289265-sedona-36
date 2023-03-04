@@ -129,6 +129,10 @@ body {
   text-transform: capitalize;
 }
 
+.navigation-link-current {
+  cursor: pointer;
+}
+
 .navigation-link-current:after {
   position: absolute;
   content: "";
@@ -155,6 +159,11 @@ body {
   min-height: 64px;
   text-decoration: none;
   color: inherit;
+}
+
+.navigation-link:hover,
+.user-navigation-link:not(.button-wanted):hover {
+  opacity: 0.6;
 }
 
 .search,
@@ -196,11 +205,12 @@ body {
 .button-wanted:hover,
 .button-wanted:focus {
   background: #615048;
+  opacity: 0.8;
 }
 
 .button-wanted:active {
   background: #756157;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main Welcome, Advantages */
@@ -1220,11 +1230,13 @@ body {
 }
 
 .pagination-current {
+  cursor:default;
   color: #000000;
   background: #F2F2F2;
 }
 
 .empty {
+  cursor:default;
   display: flex;
   justify-content: center;
   text-align: center;
