@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -143,14 +144,10 @@
             <div class="range">
 
               <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="0" name="min-price">
-                  <span class="input-absolute">от</span>
-                </label>
-                <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="9000" name="max-price">
-                  <span class="input-absolute">до</span>
-                </label>
+                <label class="catalog-filter-label label-from" for="from">от</label>
+                <input class="range-input range-input-from" id="from" type="number" value="0" name="min-price">
+                <label class="catalog-filter-label label-to" for="from">до</label>
+                <input class="range-input" id="to" type="number" value="9000" name="max-price">
               </div>
 
               <div class="range-scale">
