@@ -168,7 +168,7 @@ body {
 }
 
 .favorite svg:hover {
- opacity: 0.5;
+  opacity: 0.5;
 }
 
 .search,
@@ -499,12 +499,13 @@ body {
 }
 
 .subscription input:focus:not([disabled]) {
-  outline: 2px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
-.subscription input:not(:placeholder-shown) {
+.subscription input:focus:not(:placeholder-shown) {
+  border: none;
   background: #F2F2F2;
-  outline: 2px solid #000000;
+  outline: 3px solid #000000;
 }
 
 /* Footer */
@@ -957,7 +958,8 @@ body {
   background-color: #E6E6E6;
 }
 
-.range-input:not(:placeholder-shown) {
+.range-input:focus:not(:placeholder-shown) {
+  border: none;
   outline: 2px solid #000000;
 }
 
@@ -1398,11 +1400,6 @@ body {
   border-radius: 4px;
 }
 
-.modal-input:not(:placeholder-shown) {
-  background: #F2F2F2;
-  outline: 2px solid #000000;
-}
-
 .calendar-icon {
   grid-column: 3/4;
   background-image: url("../images/modal-window/modal-date.svg");
@@ -1446,6 +1443,13 @@ body {
 .input-date-in:focus:not([disabled]),
 .input-date-out:focus:not([disabled]) {
   outline: 3px solid #83B3D3;
+}
+
+.input-date-in:focus:not(:placeholder-shown),
+.input-date-out:focus:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+  border: none;
+  background: #F2F2F2;
 }
 
 .modal-text {
