@@ -162,8 +162,12 @@ body {
 }
 
 .navigation-link:hover,
-.user-navigation-link:not(.button-wanted):hover {
+.user-navigation-link:not(.button-wanted, .favorite):hover {
   opacity: 0.6;
+}
+
+.favorite svg:hover {
+ opacity: 0.5;
 }
 
 .search,
@@ -294,7 +298,7 @@ body {
 }
 
 .advantages-title {
-position: relative;
+  position: relative;
 }
 
 .advantages-square .advantages-title::after {
@@ -470,6 +474,7 @@ position: relative;
 }
 
 .subscription input {
+  z-index: 1;
   background-color: #F2F2F2;
   box-sizing: border-box;
   border-top-left-radius: 5px;
@@ -486,6 +491,19 @@ position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+}
+
+.subscription input:hover:not([disabled]) {
+  background: #E6E6E6;
+}
+
+.subscription input:focus:not([disabled]) {
+  outline: 2px solid #83B3D3;
+}
+
+.subscription input:not(:placeholder-shown) {
+  background: #F2F2F2;
+  outline: 2px solid #000000;
 }
 
 /* Footer */
@@ -559,7 +577,6 @@ position: relative;
   display: block;
   padding: 0;
   margin-top: 10px;
-
 }
 
 .footer-logo svg {
@@ -572,8 +589,6 @@ position: relative;
 
 .footer-logo svg:active {
   fill: rgba(117, 97, 87, 0.3);
-
-
 }
 
 /* Catalog */
@@ -781,7 +796,7 @@ position: relative;
 
 .checkbox-text,
 .radio-text {
-padding-right: 5px;
+  padding-right: 5px;
 }
 
 .checkbox-list-item:not(:last-child),
@@ -1308,7 +1323,7 @@ padding-right: 5px;
 }
 
 .modal-container-close {
-  display: none;
+  display: non;
 }
 
 .modal-section {
@@ -1371,7 +1386,6 @@ padding-right: 5px;
 }
 
 .modal-input {
-
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1559,6 +1573,11 @@ padding-right: 5px;
   line-height: 20px;
   border: none;
   appearance: textfield;
+}
+
+.input-kids::placeholder,
+.input-adults::placeholder {
+  color: #000000;
 }
 
 .input-adults::-webkit-outer-spin-button,
