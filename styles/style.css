@@ -1722,7 +1722,7 @@ body {
 
 .input-adults {
   padding: 14px 10px;
-  min-height: 48px;
+  height: 48px;
   width: 31px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1820,7 +1820,7 @@ body {
 .input-kids {
   padding: 14px 10px;
   width: 31px;
-  min-height:48px;
+  height:48px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
