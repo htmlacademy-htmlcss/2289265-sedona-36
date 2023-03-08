@@ -1046,6 +1046,7 @@ body {
 }
 
 .range-input {
+  -moz-appearance: textfield;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 143px;
