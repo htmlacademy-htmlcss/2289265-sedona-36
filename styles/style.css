@@ -507,7 +507,6 @@ body {
 .subscription-button:hover,
 .subscription-button:focus {
   background: #68A2CA;
-  outline: none;
 }
 
 .subscription-button:active:not([disabled]) {
@@ -539,7 +538,6 @@ body {
 }
 
 .subscription input {
-  z-index: 1;
   background-color: #F2F2F2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -603,6 +601,7 @@ body {
 }
 
 .footer-socials {
+  width: 195px;
   padding-top: 47px;
   padding-bottom: 33px;
   display: -webkit-box;
@@ -928,7 +927,6 @@ body {
 .button-submit:hover:not([disabled]),
 .button-submit:focus:not([disabled]) {
   background: #68A2CA;
-  outline: none;
 }
 
 .button-submit:active:not([disabled]) {
@@ -1289,6 +1287,7 @@ body {
 }
 
 .housing-type {
+  color: #333333;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1327,7 +1326,6 @@ body {
 .button-favorite:hover:not([disabled]),
 .button-favorite:focus:not([disabled]) {
   background: #68A2CA;
-  outline: none;
 }
 
 .button-favorite:active:not([disabled]) {
@@ -1341,7 +1339,6 @@ body {
 
 .button-in-favorite:hover:not([disabled]),
 .button-in-favorite:focus:not([disabled]) {
-  outline: none;
   background: #6C9E42;
 }
 
@@ -1729,6 +1726,7 @@ body {
   box-sizing: border-box;
   outline: none;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1826,6 +1824,7 @@ body {
   box-sizing: border-box;
   outline: none;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1936,7 +1935,6 @@ body {
 .button-find:hover:not([disabled]),
 .button-find:focus:not([disabled]) {
   background: #68A2CA;
-  outline: none;
 }
 
 .button-find:active:not([disabled]) {
